@@ -1,0 +1,4268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キレイレポオンライン | GLP-1ダイエット・美容内服のオンライン診療</title>
+  <meta name="description" content="キレイレポオンラインは、GLP-1ダイエット・美容内服をオンラインで完結できるサービスです。定期縛りなし。スマホ1台で医師の診察を受け、薬が自宅に届きます。">
+  <!-- OGP -->
+  <meta property="og:title" content="キレイレポオンライン | GLP-1ダイエット・美容内服のオンライン診療">
+  <meta property="og:description" content="GLP-1ダイエット・美容内服をオンラインで。スマホ完結で薬が自宅に届きます。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="キレイレポオンライン">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "キレイレポオンライン",
+    "description": "オンライン完結の美容内服・GLP-1ダイエットプラットフォーム",
+    "url": "https://kireirepo-online.clinic",
+    "provider": {
+      "@type": "Organization",
+      "name": "株式会社シアン",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "品川区",
+        "addressCountry": "JP"
+      }
+    },
+    "offers": [
+      { "@type": "Offer", "name": "GLP-1ダイエット処方" },
+      { "@type": "Offer", "name": "美容内服処方" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "キレイレポオンライン",
+    "description": "オンライン完結の美容内服・GLP-1ダイエットサービス",
+    "lastReviewed": "2026-02-25"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #f9f9f9;
+      color: #2c3e50;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ===== COLOR VARIABLES ===== */
+    :root {
+      --pink: #ff4471;
+      --pink-light: #ff6b8e;
+      --pink-pale: #fff0f4;
+      --pink-pale2: #ffe0ea;
+      --navy: #2c3e50;
+      --navy-light: #3d5166;
+      --gray: #f9f9f9;
+      --gray2: #f0f0f0;
+      --gray3: #e0e0e0;
+      --text-muted: #7f8c8d;
+      --white: #ffffff;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 32px rgba(255,68,113,0.18);
+      --radius: 16px;
+      --radius-sm: 8px;
+    }
+
+    /* ===== PAGE SWITCHER (hidden) ===== */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ===== GLOBAL NAV ===== */
+    .site-header {
+      background: white;
+      border-bottom: 2px solid var(--pink-pale2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(255,68,113,0.08);
+    }
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .site-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--pink);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+      cursor: pointer;
+    }
+    .site-logo span { color: var(--navy); }
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .site-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+    .site-nav a:hover, .site-nav a.active {
+      background: var(--pink-pale);
+      color: var(--pink);
+    }
+    .nav-cta {
+      background: var(--pink) !important;
+      color: white !important;
+      border-radius: 24px !important;
+      padding: 8px 20px !important;
+      font-weight: 700 !important;
+      transition: background 0.2s, transform 0.1s !important;
+    }
+    .nav-cta:hover {
+      background: var(--pink-light) !important;
+      transform: translateY(-1px);
+    }
+
+    /* ===== BREADCRUMB ===== */
+    .breadcrumb {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .breadcrumb a { color: var(--pink); cursor: pointer; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ===== SHARED SECTION STYLES ===== */
+    .section {
+      padding: 52px 20px;
+    }
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-tag {
+      display: inline-block;
+      background: var(--pink-pale);
+      color: var(--pink);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .section-title {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .section-title .accent { color: var(--pink); }
+    .section-sub {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      max-width: 560px;
+    }
+    .section-center { text-align: center; }
+    .section-center .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--pink);
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 36px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 18px rgba(255,68,113,0.35);
+      letter-spacing: 0.3px;
+    }
+    .btn-primary:hover {
+      background: var(--pink-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(255,68,113,0.4);
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--pink);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 13px 28px;
+      border-radius: 36px;
+      border: 2px solid var(--pink);
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn-outline:hover {
+      background: var(--pink-pale);
+    }
+    .btn-lg { font-size: 18px; padding: 20px 48px; }
+
+    /* ===== LINE BUTTON ===== */
+    .btn-line {
+      background: #06C755;
+      box-shadow: 0 4px 18px rgba(6,199,85,0.35);
+    }
+    .btn-line:hover { background: #05b34c; box-shadow: 0 8px 28px rgba(6,199,85,0.4); }
+
+    /* ===== BADGE ===== */
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 12px;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    .badge-new { background: #ff4471; color: white; }
+    .badge-hot { background: #ff6b2b; color: white; }
+    .badge-coming { background: #a0a0a0; color: white; }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gray3), transparent);
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+
+    /* ===================================================
+       TOP PAGE
+    =================================================== */
+
+    /* --- HERO --- */
+    .hero-top {
+      background: linear-gradient(135deg, #fff0f4 0%, #ffffff 50%, #f0f7ff 100%);
+      padding: 80px 20px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-top::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,68,113,0.10) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-top::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -60px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(44,62,80,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-top-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--pink-pale);
+      border: 1px solid var(--pink-pale2);
+      color: var(--pink);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .hero-eyebrow i { font-size: 11px; }
+    .hero-title {
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero-title .accent { color: var(--pink); }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      line-height: 1.8;
+      max-width: 460px;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 16px;
+    }
+    .hero-note i { color: var(--pink); font-size: 11px; }
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .hero-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.2s;
+    }
+    .hero-card:hover { transform: translateY(-2px); }
+    .hero-card-icon {
+      width: 48px; height: 48px;
+      background: var(--pink-pale);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .hero-card-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+    .hero-card-text span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .hero-stat {
+      background: white;
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .hero-stat .num {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--pink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-stat .label {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* --- SERVICE CARDS --- */
+    .services-section { background: white; }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: var(--gray);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      border: 2px solid transparent;
+      transition: all 0.25s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--pink);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+      transform-origin: left;
+    }
+    .service-card:hover {
+      border-color: var(--pink-pale2);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-4px);
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card.disabled {
+      opacity: 0.65;
+      cursor: default;
+    }
+    .service-card.disabled:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: transparent;
+    }
+    .service-card.disabled:hover::before { transform: scaleX(0); }
+    .service-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .service-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .service-card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .service-card-link {
+      font-size: 13px;
+      color: var(--pink);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* --- REASONS --- */
+    .reasons-section { background: var(--pink-pale); }
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .reason-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .reason-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .reason-icon-wrap {
+      width: 70px; height: 70px;
+      background: var(--pink-pale);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 28px;
+    }
+    .reason-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .reason-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .reason-free-tag {
+      display: inline-block;
+      background: var(--pink);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+
+    /* --- FLOW --- */
+    .flow-section { background: white; }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .flow-steps::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: calc(16.67% + 20px);
+      right: calc(16.67% + 20px);
+      height: 2px;
+      background: linear-gradient(to right, var(--pink-pale2), var(--pink-pale2));
+    }
+    .flow-step {
+      text-align: center;
+      padding: 0 24px;
+    }
+    .flow-num {
+      width: 80px; height: 80px;
+      background: white;
+      border: 3px solid var(--pink);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--pink);
+      position: relative;
+      z-index: 1;
+      transition: background 0.2s, color 0.2s;
+    }
+    .flow-step:hover .flow-num {
+      background: var(--pink);
+      color: white;
+    }
+    .flow-step-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .flow-step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .flow-step-time {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--pink);
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    /* --- TOP CTA SECTION --- */
+    .cta-section {
+      background: var(--pink-pale);
+      border-top: 1px solid var(--pink-pale2);
+      border-bottom: 1px solid var(--pink-pale2);
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .cta-section .section-title { color: var(--navy); margin-bottom: 12px; }
+    .cta-section .section-sub { color: var(--text-muted); margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .btn-white {
+      background: white;
+      color: var(--pink);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    }
+    .btn-white:hover {
+      background: #fff5f8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+    }
+    .cta-note-white {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* --- FOOTER --- */
+    .site-footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.6);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer-links a:hover { color: white; }
+    .footer-copy { font-size: 12px; }
+
+    /* ===================================================
+       AGA PAGE
+    =================================================== */
+
+    /* --- AGA HERO --- */
+    .hero-aga {
+      background: linear-gradient(135deg, #1a2538 0%, #2c3e50 60%, #3d5166 100%);
+      padding: 72px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-aga::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(255,68,113,0.2) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-aga-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-aga .hero-eyebrow {
+      background: rgba(255,68,113,0.15);
+      border-color: rgba(255,68,113,0.3);
+      color: #ff8aaa;
+    }
+    .hero-aga .hero-title {
+      color: white;
+      margin-bottom: 16px;
+    }
+    .hero-aga .hero-desc {
+      color: rgba(255,255,255,0.75);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
+    .hero-aga-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hero-badge i { color: #ffcc00; }
+
+    /* --- PLANS --- */
+    .plans-section { background: white; }
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+    .plan-card {
+      border-radius: var(--radius);
+      border: 2px solid var(--gray3);
+      padding: 32px 24px;
+      transition: all 0.25s;
+      background: white;
+      position: relative;
+    }
+    .plan-card:hover {
+      border-color: var(--pink);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-4px);
+    }
+    .plan-card.featured {
+      border-color: var(--pink);
+      box-shadow: 0 8px 32px rgba(255,68,113,0.18);
+    }
+    .plan-card.featured::before {
+      content: '人気 No.1';
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--pink);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .plan-card.featured.no-badge::before {
+      display: none;
+      padding: 4px 18px;
+      border-radius: 14px;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+    }
+    .plan-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .plan-title {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .plan-price-wrap {
+      margin: 16px 0;
+      padding: 16px 0;
+      border-top: 1px solid var(--gray3);
+      border-bottom: 1px solid var(--gray3);
+    }
+    .plan-price-label { font-size: 12px; color: var(--text-muted); }
+    .plan-price {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--pink);
+      line-height: 1.1;
+    }
+    .plan-price-sub { font-size: 14px; font-weight: 400; color: var(--text-muted); }
+    .plan-items {
+      list-style: none;
+      margin: 20px 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .plan-items li {
+      font-size: 13.5px;
+      color: var(--navy);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .plan-items li i { color: var(--pink); font-size: 14px; margin-top: 2px; flex-shrink: 0; }
+    .plan-items li.muted { color: var(--text-muted); }
+    .plan-items li.muted i { color: var(--gray3); }
+    .plan-free-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .free-tag {
+      background: var(--pink-pale);
+      color: var(--pink);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 10px;
+    }
+    .plan-btn { width: 100%; text-align: center; justify-content: center; }
+    .plan-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* --- PLAN PERIOD TABS --- */
+    .plan-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .plan-tab {
+      background: white;
+      color: var(--pink);
+      border: 2px solid var(--pink);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+      font-family: inherit;
+    }
+    .plan-tab:hover {
+      background: var(--pink-pale);
+    }
+    .plan-tab.active {
+      background: var(--pink);
+      color: white;
+      box-shadow: 0 4px 14px rgba(255,68,113,0.3);
+    }
+    .tab-badge {
+      display: inline-block;
+      background: #ff6b2b;
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 8px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+    .plan-tab.active .tab-badge {
+      background: rgba(255,255,255,0.9);
+      color: #ff6b2b;
+    }
+    .plan-monthly {
+      font-size: 13px;
+      color: var(--pink);
+      font-weight: 600;
+      margin-top: 4px;
+      display: none;
+    }
+    .plan-monthly.show { display: block; }
+    .plan-discount {
+      font-size: 11px;
+      color: white;
+      background: #ff6b2b;
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin-top: 6px;
+      display: none;
+    }
+    .plan-discount.show { display: inline-block; }
+
+    /* --- PLANS CATEGORY HEADER --- */
+    .plans-category {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 48px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--gray3);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .plans-category:first-of-type { margin-top: 0; }
+    .plans-category i { color: var(--pink); font-size: 18px; }
+    .plans-category-sub {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+    .plans-grid-single {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 24px;
+    }
+
+    /* --- MEDICINE TABLE --- */
+    .medicine-section { background: var(--gray); }
+    .med-table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .med-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      font-size: 14px;
+    }
+    .med-table th {
+      background: var(--navy);
+      color: white;
+      padding: 14px 20px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .med-table th:first-child { border-radius: 16px 0 0 0; }
+    .med-table th:last-child { border-radius: 0 16px 0 0; }
+    .med-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--gray2);
+      vertical-align: middle;
+      color: var(--navy);
+    }
+    .med-table tr:last-child td { border-bottom: none; }
+    .med-table tr:nth-child(even) td { background: var(--gray); }
+    .med-table .recommend {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--pink);
+    }
+    .med-table .check { color: var(--pink); font-weight: 700; }
+    .med-table .mild { color: #f39c12; }
+
+    /* --- FAQ --- */
+    .faq-section { background: white; }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--gray);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--gray3);
+      transition: border-color 0.2s;
+    }
+    .faq-item:hover { border-color: var(--pink-pale2); }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--navy);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+    .faq-q-icon {
+      width: 28px; height: 28px;
+      background: var(--pink);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .faq-a {
+      padding: 0 24px 20px calc(28px + 14px + 24px);
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .faq-a-icon {
+      display: inline-block;
+      width: 28px; height: 28px;
+      background: var(--gray2);
+      color: var(--navy);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    /* --- MEDICINE TABLE MOBILE SCROLL --- */
+    @media (max-width: 600px) {
+      .med-table-wrap {
+        position: relative;
+        overflow-x: auto;
+      }
+      .med-table th:first-child,
+      .med-table td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        background: white;
+        min-width: 100px;
+      }
+      .med-table th:first-child {
+        background: var(--navy);
+        z-index: 3;
+      }
+      .med-table tr:nth-child(even) td:first-child {
+        background: var(--gray);
+      }
+    }
+
+    /* --- DISCLAIMER --- */
+    .disclaimer {
+      background: var(--gray2);
+      padding: 24px 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-top-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-visual { order: -1; }
+      .hero-stats { grid-template-columns: repeat(4, 1fr); }
+      .service-grid { grid-template-columns: repeat(2, 1fr); }
+      .reasons-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr; gap: 32px; }
+      .flow-steps::before { display: none; }
+      .plans-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .plan-tab { font-size: 13px; padding: 8px 16px; }
+    }
+    @media (max-width: 768px) {
+      .site-nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 40px 16px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .hero-aga-badges { gap: 8px; }
+      .hero-badge { font-size: 12px; padding: 5px 12px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr; gap: 24px; }
+      .results-grid { grid-template-columns: repeat(2, 1fr); }
+      .trust-ribbon-inner { flex-direction: column; align-items: center; gap: 8px; }
+    }
+
+    /* ===================================================
+       GLP-1 PAGE
+    =================================================== */
+
+    /* --- GLP-1 HERO --- */
+    .hero-glp1 {
+      background: white;
+      border-bottom: 2px solid var(--pink-pale2);
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-glp1::before {
+      display: none;
+    }
+    .hero-glp1::after {
+      display: none;
+    }
+    .hero-glp1-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-glp1 .hero-eyebrow {
+      background: var(--pink-pale);
+      border-color: var(--pink-pale2);
+      color: var(--pink);
+    }
+    .hero-glp1 .hero-title { color: var(--navy); margin-bottom: 16px; }
+    .hero-glp1 .hero-title .accent { color: var(--pink); }
+    .hero-glp1 .hero-desc {
+      color: var(--text-muted);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
+    .hero-glp1-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-glp1 .hero-badge {
+      background: var(--pink-pale);
+      border: 1px solid var(--pink-pale2);
+      color: var(--pink);
+    }
+    .hero-glp1 .hero-badge i { color: var(--pink); }
+
+    /* --- GLP-1 MECHANISM --- */
+    .mechanism-section { background: var(--pink-pale); }
+    .mechanism-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .mechanism-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mechanism-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .mechanism-emoji {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    .mechanism-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .mechanism-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* --- CAUTION SECTION --- */
+    .caution-section {
+      background: var(--gray2);
+      padding: 48px 20px;
+    }
+    .caution-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .caution-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .caution-title i { color: var(--text-muted); }
+    .caution-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .caution-list li {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.7;
+    }
+    .caution-list li::before {
+      content: '・';
+      flex-shrink: 0;
+      color: var(--text-muted);
+    }
+
+    /* ===================================================
+       BEAUTY PAGE
+    =================================================== */
+
+    /* --- BEAUTY HERO --- */
+    .hero-beauty {
+      background: linear-gradient(135deg, #fff0f4 0%, #fce4ec 50%, #fff9fb 100%);
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 2px solid var(--pink-pale2);
+    }
+    .hero-beauty::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(255,68,113,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-beauty-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-beauty .hero-eyebrow {
+      background: var(--pink-pale);
+      border-color: var(--pink-pale2);
+      color: var(--pink);
+    }
+    .hero-beauty .hero-title { color: var(--navy); margin-bottom: 16px; }
+    .hero-beauty .hero-desc {
+      color: var(--text-muted);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
+    .hero-beauty-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-beauty .hero-badge {
+      background: white;
+      border: 1px solid var(--pink-pale2);
+      color: var(--pink);
+    }
+    .hero-beauty .hero-badge i { color: var(--pink); }
+
+    /* ===================================================
+       ANTI-AGING PAGE
+    =================================================== */
+    .hero-antiaging {
+      background: linear-gradient(135deg, #faf7f0 0%, #f5f0e0 100%);
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 2px solid #e8dcc8;
+    }
+    .hero-antiaging::before {
+      display: none;
+    }
+    .hero-antiaging::after {
+      display: none;
+    }
+    .hero-antiaging-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-antiaging .hero-eyebrow {
+      background: #f5f0e0;
+      border-color: #e8dcc8;
+      color: #b8860b;
+    }
+    .hero-antiaging .hero-title { color: var(--navy); margin-bottom: 16px; }
+    .hero-antiaging .hero-title .accent { color: #b8860b; }
+    .hero-antiaging .hero-desc {
+      color: var(--text-muted);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
+    .hero-antiaging-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-antiaging .hero-badge {
+      background: #f5f0e0;
+      border: 1px solid #e8dcc8;
+      color: #b8860b;
+    }
+    .hero-antiaging .hero-badge i { color: #b8860b; }
+    .antiaging-mechanism {
+      background: #f8f6f0;
+    }
+    .antiaging-mechanism .section-title .accent { color: #b8860b; }
+    #page-antiaging .plan-tab.active {
+      box-shadow: 0 4px 14px rgba(184,134,11,0.3);
+    }
+    #page-antiaging .plan-tab:hover:not(.active) {
+      background: #f8f6f0;
+    }
+    #page-antiaging .plan-monthly {
+      color: #b8860b;
+    }
+
+    /* --- INGREDIENTS TABLE --- */
+    .ingredients-section { background: var(--gray); }
+
+    /* ===== LEGAL PAGES ===== */
+    .legal-page {
+      background: var(--white);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 40px 64px;
+    }
+    .legal-breadcrumb {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+    .legal-breadcrumb a {
+      color: var(--pink);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .legal-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .legal-breadcrumb span {
+      margin: 0 8px;
+      color: var(--gray3);
+    }
+    .legal-page-header {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--pink);
+    }
+    .legal-page-intro {
+      font-size: 14px;
+      color: var(--navy-light);
+      line-height: 1.9;
+      margin-bottom: 40px;
+    }
+    .legal-article {
+      margin-bottom: 36px;
+      padding-left: 16px;
+      border-left: 3px solid var(--pink-pale2);
+    }
+    .legal-article-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      padding: 6px 0;
+    }
+    .legal-article-body {
+      font-size: 13.5px;
+      color: var(--navy-light);
+      line-height: 2;
+    }
+    .legal-ol {
+      list-style: none;
+      counter-reset: legal-counter;
+      padding: 0;
+      margin: 0;
+    }
+    .legal-ol > li {
+      counter-increment: legal-counter;
+      padding-left: 2em;
+      text-indent: -2em;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+      color: var(--navy-light);
+      line-height: 2;
+    }
+    .legal-ol > li::before {
+      content: counter(legal-counter) ". ";
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .legal-sub-list {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 8px 1em;
+    }
+    .legal-sub-list > li {
+      text-indent: 0;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: var(--navy-light);
+      line-height: 1.9;
+    }
+    .legal-plain-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0;
+    }
+    .legal-plain-list > li {
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+      margin-bottom: 4px;
+      font-size: 13.5px;
+      color: var(--navy-light);
+      line-height: 2;
+    }
+    .legal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 36px;
+      font-size: 13.5px;
+    }
+    .legal-table th,
+    .legal-table td {
+      padding: 14px 16px;
+      border: 1px solid var(--gray3);
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.8;
+    }
+    .legal-table th {
+      background: var(--pink-pale);
+      color: var(--navy);
+      font-weight: 600;
+      white-space: nowrap;
+      width: 160px;
+    }
+    .legal-table td {
+      background: var(--white);
+      color: var(--navy-light);
+    }
+    .legal-table tr:nth-child(even) td {
+      background: var(--gray);
+    }
+    .legal-table tr:nth-child(even) th {
+      background: var(--pink-pale2);
+    }
+    .legal-date {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--gray3);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: right;
+    }
+    .legal-back-top {
+      display: inline-block;
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--pink);
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .legal-back-top:hover {
+      opacity: 0.7;
+    }
+    .legal-back-top i {
+      margin-right: 4px;
+    }
+
+    /* ===== UTILITY ===== */
+    .mt-4 { margin-top: 4px; }
+    .mt-8 { margin-top: 8px; }
+    .mt-16 { margin-top: 16px; }
+    .mt-24 { margin-top: 24px; }
+    .text-center { text-align: center; }
+    .text-pink { color: var(--pink); }
+    .highlight {
+      display: inline-block;
+      background: var(--pink-pale);
+      color: var(--pink);
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* ===== SCROLL REVEAL ANIMATION ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      will-change: transform, opacity;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* ===== PAGE ANCHOR NAV (sticky) ===== */
+    .page-anchor-nav {
+      background: white;
+      border-bottom: 1px solid var(--gray3);
+      position: sticky;
+      top: 64px;
+      z-index: 90;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .page-anchor-nav::-webkit-scrollbar { display: none; }
+    .page-anchor-nav-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .page-anchor-nav a {
+      padding: 14px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+    .page-anchor-nav a:hover,
+    .page-anchor-nav a.active {
+      color: var(--pink);
+      border-bottom-color: var(--pink);
+    }
+
+    /* ===== TRUST RIBBON ===== */
+    .trust-ribbon {
+      background: var(--pink);
+      padding: 14px 20px;
+    }
+    .trust-ribbon-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .trust-ribbon-item {
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .trust-ribbon-item i { font-size: 14px; }
+
+    /* ===== REFUND GUARANTEE ===== */
+    .refund-guarantee {
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%);
+      border: 2px solid #ffc107;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .refund-guarantee-title {
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .refund-guarantee-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ===== PLAN DAILY PRICE ===== */
+    .plan-daily {
+      font-size: 12px;
+      color: var(--pink);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    /* ===== FEATURED PLAN ENHANCED ===== */
+    .plan-card.featured {
+      border-color: var(--pink);
+      background: linear-gradient(180deg, #fff5f8 0%, white 40%);
+      box-shadow: 0 8px 32px rgba(255,68,113,0.18);
+    }
+    .plan-popular-note {
+      text-align: center;
+      font-size: 12px;
+      color: var(--pink);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    /* ===== FOOTER ENHANCED ===== */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 32px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .footer-col-title {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 3px 0;
+    }
+    .footer-col a:hover { color: white; }
+    .footer-col a.footer-line-btn { display: inline-flex; color: white; padding: 10px 20px; font-size: 13px; }
+    .footer-brand-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .footer-line-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #06C755;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .footer-line-btn:hover { opacity: 0.9; color: white; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 12px;
+    }
+    .footer-bottom-info {
+      color: rgba(255,255,255,0.4);
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    /* ===== CAMPAIGN BANNER ===== */
+    .campaign-banner {
+      background: linear-gradient(90deg, var(--pink) 0%, #ff6b8e 50%, #ff8aaa 100%);
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      letter-spacing: 0.3px;
+    }
+    .campaign-banner-close {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.7);
+      font-size: 18px;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    .campaign-banner-close:hover { color: white; }
+    .campaign-banner.hidden { display: none; }
+
+    /* ===== RESULTS SECTION ===== */
+    .results-section { background: white; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .result-card {
+      text-align: center;
+      padding: 32px 16px;
+      background: var(--gray);
+      border-radius: var(--radius);
+      transition: transform 0.2s;
+    }
+    .result-card:hover { transform: translateY(-3px); }
+    .result-num {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 900;
+      color: var(--pink);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .result-num .unit {
+      font-size: 0.45em;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .result-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ===== STICKY BOTTOM CTA BAR (mobile only) ===== */
+    .sticky-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: white;
+      border-top: 1px solid var(--gray3);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.10);
+      padding: 10px 16px;
+    }
+    .sticky-cta-bar-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .sticky-cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 8px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .sticky-cta-btn:hover { opacity: 0.9; }
+    .sticky-cta-btn.line { background: #06C755; color: white; }
+    .sticky-cta-btn.phone { background: var(--pink); color: white; }
+
+    /* ===== HAMBURGER MENU ===== */
+    .hamburger-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 301;
+      position: relative;
+    }
+    .hamburger-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--navy);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .hamburger-btn.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger-btn.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-btn.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 299;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .mobile-menu-overlay.show {
+      opacity: 1;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100%;
+      background: white;
+      z-index: 300;
+      transition: right 0.3s ease;
+      padding: 80px 24px 40px;
+      overflow-y: auto;
+      box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    }
+    .mobile-menu.open {
+      right: 0;
+    }
+    .mobile-menu a {
+      display: block;
+      padding: 16px 0;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--gray2);
+      cursor: pointer;
+    }
+    .mobile-menu a:hover { color: var(--pink); }
+    .mobile-menu .mobile-menu-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding: 16px;
+      background: #06C755;
+      color: white;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      border-bottom: none;
+    }
+    .mobile-menu .mobile-menu-cta:hover { color: white; opacity: 0.9; }
+
+    /* ===== FAQ CATEGORY TITLE ===== */
+    .faq-category-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      border-left: 4px solid var(--pink);
+      padding-left: 14px;
+      margin: 40px 0 16px;
+    }
+    .faq-category-title:first-child { margin-top: 0; }
+
+    /* ===== FAQ ACCORDION ===== */
+    .faq-item {
+      background: var(--gray);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--gray3);
+      transition: border-color 0.2s;
+    }
+    .faq-item:hover { border-color: var(--pink-pale2); }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--navy);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .faq-q-toggle {
+      margin-left: auto;
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--pink);
+      transition: transform 0.3s;
+      font-weight: 400;
+    }
+    .faq-item.open .faq-q-toggle {
+      transform: rotate(45deg);
+    }
+    .faq-a-wrap {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-item.open .faq-a-wrap {
+      max-height: 300px;
+    }
+    .faq-a {
+      padding: 0 24px 20px calc(28px + 14px + 24px);
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .mechanism-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .results-grid { grid-template-columns: repeat(2, 1fr); }
+
+
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .flow-steps { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .trust-ribbon-inner { gap: 12px; }
+      .legal-page { padding: 36px 24px 48px; }
+      .legal-page-header { font-size: 20px; }
+      .legal-table th { width: 120px; }
+    }
+
+    @media (max-width: 768px) {
+      .sticky-cta-bar { display: block; }
+      body { padding-bottom: 72px; }
+      .hamburger-btn { display: block; }
+    }
+
+    @media (max-width: 600px) {
+      .legal-page { padding: 24px 16px 40px; }
+      .legal-page-header { font-size: 18px; }
+      .legal-article { padding-left: 12px; }
+      .legal-article-title { font-size: 15px; }
+      .legal-table th {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+      }
+      .legal-table td {
+        display: block;
+        width: 100%;
+      }
+      .legal-table tr {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==================== SITE HEADER ==================== -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-logo" onclick="showPage('top')">
+      キレイレポ<span>オンライン</span>
+    </div>
+    <nav class="site-nav">
+      <a onclick="showPage('top')" id="nav-top" class="active">トップ</a>
+      <a onclick="showPage('glp1')" id="nav-glp1">GLP-1</a>
+      <a onclick="showPage('beauty')" id="nav-beauty">美容内服</a>
+      <a onclick="showPage('antiaging')" id="nav-antiaging">アンチエイジング</a>
+      <a onclick="showPage('faq')" id="nav-faq">FAQ</a>
+      <a class="nav-cta" href="https://lin.ee/3vvO4ol" target="_blank">
+        <i class="fab fa-line"></i> 無料相談
+      </a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('top'); toggleMobileMenu();">トップ</a>
+  <a onclick="showPage('glp1'); toggleMobileMenu();">GLP-1</a>
+  <a onclick="showPage('beauty'); toggleMobileMenu();">美容内服</a>
+  <a onclick="showPage('antiaging'); toggleMobileMenu();">アンチエイジング</a>
+  <a onclick="showPage('faq'); toggleMobileMenu();">FAQ</a>
+  <a class="mobile-menu-cta" href="https://lin.ee/3vvO4ol" target="_blank" onclick="toggleMobileMenu();">
+    <i class="fab fa-line"></i> LINE無料相談
+  </a>
+</nav>
+
+
+<!-- ==================== TOP PAGE ==================== -->
+<div id="page-top" class="page active">
+
+  <!-- HERO -->
+  <section class="hero-top">
+    <div class="hero-top-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <i class="fas fa-star"></i>
+          オンライン診療・完全完結
+        </div>
+        <h1 class="hero-title">
+          自宅にいながら、<br>
+          <span class="accent">医師の処方</span>で。
+        </h1>
+        <p class="hero-desc">
+          キレイレポオンラインは、美容内服・GLP-1ダイエットをオンラインで完結できるサービスです。提携クリニック（マーチクリニック）の医師がビデオ通話で診察し、薬が自宅に届きます。
+        </p>
+        <div class="hero-cta-group">
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line">
+            <i class="fab fa-line"></i> LINEで無料相談
+          </a>
+          <button class="btn-outline" onclick="scrollToSection('services')">
+            サービスを見る <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+        <div class="hero-note">
+          <i class="fas fa-check-circle"></i> 診察・配送料 2,000円
+          &nbsp;・&nbsp;
+          <i class="fas fa-check-circle"></i> 縛りなし
+          &nbsp;・&nbsp;
+          <i class="fas fa-check-circle"></i> LINEで完結
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-icon">💊</div>
+            <div class="hero-card-text">
+              <strong>GLP-1ダイエット</strong>
+              <span>マンジャロ・リベルサス処方</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">✨</div>
+            <div class="hero-card-text">
+              <strong>美容内服</strong>
+              <span>美白・エイジングケア処方</span>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="num">2,000<span style="font-size:16px">円</span></div>
+              <div class="label">診察・配送料</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">0<span style="font-size:16px">回</span></div>
+              <div class="label">通院回数</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST RIBBON -->
+  <div class="trust-ribbon">
+    <div class="trust-ribbon-inner">
+      <div class="trust-ribbon-item"><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</div>
+      <div class="trust-ribbon-item"><i class="fas fa-check-circle"></i> 定期縛りなし</div>
+      <div class="trust-ribbon-item"><i class="fas fa-check-circle"></i> オンライン完結</div>
+      <div class="trust-ribbon-item"><i class="fas fa-check-circle"></i> LINEで相談OK</div>
+    </div>
+  </div>
+
+  <!-- SERVICE LIST -->
+  <section class="section services-section" id="services">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">SERVICES</span>
+        <h2 class="section-title">診療メニュー</h2>
+        <p class="section-sub">あなたの目的に合わせた治療プランをご提案します。すべてオンライン完結。</p>
+      </div>
+      <div class="service-grid">
+
+        <!-- GLP-1 -->
+        <div class="service-card reveal" onclick="showPage('glp1')" style="cursor:pointer">
+          <span class="service-icon">💊</span>
+          <div class="service-card-title">GLP-1ダイエット</div>
+          <p class="service-card-desc">マンジャロ（GIP/GLP-1二重作動薬）を中心に処方。月額12,000円〜。医師による丁寧なサポートで無理なく減量。</p>
+          <div class="service-card-link">
+            詳しく見る <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- 美容内服 -->
+        <div class="service-card reveal reveal-delay-1" onclick="showPage('beauty')" style="cursor:pointer">
+          <span class="service-icon">✨</span>
+          <div class="service-card-title">美容内服</div>
+          <p class="service-card-desc">美白・美肌・エイジングケアに特化した内服薬を処方。トランサミン・ビタミンC・コラーゲン等。</p>
+          <div class="service-card-link">
+            詳しく見る <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- アンチエイジング -->
+        <div class="service-card reveal reveal-delay-2" onclick="showPage('antiaging')" style="cursor:pointer">
+          <span class="service-icon">🧬</span>
+          <div class="service-card-title">アンチエイジング</div>
+          <p class="service-card-desc">メトホルミンで細胞レベルの若返り。海外の長寿研究で注目の抗老化アプローチ。月額2,980円〜。</p>
+          <div class="service-card-link">
+            詳しく見る <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- REASONS -->
+  <section class="section reasons-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">WHY US</span>
+        <h2 class="section-title">キレイレポが<span class="accent">選ばれる理由</span></h2>
+        <p class="section-sub">通院不要で、質の高い医療をリーズナブルに。</p>
+      </div>
+      <div class="reasons-grid">
+
+        <div class="reason-card reveal">
+          <div class="reason-icon-wrap">
+            <i class="fas fa-user-md" style="color: var(--pink)"></i>
+          </div>
+          <div class="reason-title">医師によるオンライン診療</div>
+          <p class="reason-desc">
+            経験豊富な医師がビデオ通話で丁寧に診察。自宅にいながら本格的な医療を受けられます。
+          </p>
+          <span class="reason-free-tag">診察・配送料 2,000円</span>
+        </div>
+
+        <div class="reason-card reveal reveal-delay-1">
+          <div class="reason-icon-wrap">
+            <i class="fas fa-box" style="color: var(--pink)"></i>
+          </div>
+          <div class="reason-title">自宅に直接お届け</div>
+          <p class="reason-desc">
+            処方された薬は郵便ポストや宅配便でお届け。定期便なら毎月自動発送で飲み忘れを防ぎます。
+          </p>
+          <span class="reason-free-tag">配送料込み</span>
+        </div>
+
+        <div class="reason-card reveal reveal-delay-2">
+          <div class="reason-icon-wrap">
+            <i class="fab fa-line" style="color: var(--pink)"></i>
+          </div>
+          <div class="reason-title">LINEで気軽に相談</div>
+          <p class="reason-desc">
+            専任スタッフがLINEで対応。診察の予約から薬の変更まで、すべてLINE上で完結します。
+          </p>
+          <span class="reason-free-tag">相談無料</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="section flow-section" id="flow">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">HOW IT WORKS</span>
+        <h2 class="section-title">診療の流れ</h2>
+        <p class="section-sub">申し込みから薬の到着まで、すべてオンラインで完結。</p>
+      </div>
+      <div class="flow-steps">
+
+        <div class="flow-step reveal">
+          <div class="flow-num"><i class="fab fa-line" style="font-size:28px"></i></div>
+          <div class="flow-step-title">LINE友だち追加</div>
+          <p class="flow-step-desc">
+            QRコードまたはボタンからLINE友だち追加。24時間いつでも登録OK。
+          </p>
+          <div class="flow-step-time">
+            <i class="fas fa-clock"></i> 約30秒
+          </div>
+        </div>
+
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-num"><i class="fas fa-clipboard-list" style="font-size:26px"></i></div>
+          <div class="flow-step-title">問診票を記入</div>
+          <p class="flow-step-desc">
+            簡単な質問に答えるだけ。健康状態やお悩みをLINE上で入力します。
+          </p>
+          <div class="flow-step-time">
+            <i class="fas fa-clock"></i> 約5分
+          </div>
+        </div>
+
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-num"><i class="fas fa-user-md" style="font-size:26px"></i></div>
+          <div class="flow-step-title">オンライン診察</div>
+          <p class="flow-step-desc">
+            ビデオ通話で医師が診察。最適な処方を決定します。
+          </p>
+          <div class="flow-step-time">
+            <i class="fas fa-clock"></i> 約10分
+          </div>
+        </div>
+
+        <div class="flow-step reveal reveal-delay-3">
+          <div class="flow-num"><i class="fas fa-box" style="font-size:26px"></i></div>
+          <div class="flow-step-title">薬が自宅に届く</div>
+          <p class="flow-step-desc">
+            処方確定後、薬を発送。定期便なら毎月自動でお届け。LINEで経過フォローも。
+          </p>
+          <div class="flow-step-time">
+            <i class="fas fa-truck"></i> ご自宅にお届け
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP CTA -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <h2 class="section-title">まずはLINEで<br>無料相談</h2>
+      <p class="section-sub">費用のご不安・どの治療が向いているかなど、お気軽にご相談ください。</p>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-lg">
+        <i class="fab fa-line"></i>
+        LINEで無料相談する
+      </a>
+      <div class="cta-note-white">
+        <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
+        <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-top -->
+
+<!-- ==================== GLP-1 PAGE ==================== -->
+<div id="page-glp1" class="page">
+
+  <!-- BREADCRUMB -->
+  <div style="background: white; border-bottom: 1px solid var(--gray3);">
+    <div class="breadcrumb">
+      <a onclick="showPage('top')">トップ</a>
+      <span>›</span>
+      GLP-1ダイエット
+    </div>
+  </div>
+
+  <!-- GLP-1 HERO -->
+  <section class="hero-glp1">
+    <div class="hero-glp1-inner">
+      <div class="hero-eyebrow">
+        <i class="fas fa-star"></i>
+        医師監修 · GLP-1オンライン処方
+      </div>
+      <h1 class="hero-title">
+        GLP-1ダイエット オンライン処方
+      </h1>
+      <p class="hero-desc">
+        食欲を抑え、体重を落とす。医師監修の本格ダイエット治療。<br>
+        スマホ完結で薬が自宅に届きます。
+      </p>
+      <div class="hero-glp1-badges">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> 診察・配送料 2,000円
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> 縛りなし
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> オンライン完結
+        </div>
+      </div>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary">
+        <i class="fab fa-line"></i> LINEで無料相談
+      </a>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="section plans-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">PLANS</span>
+        <h2 class="section-title">料金プラン</h2>
+        <p class="section-sub">ご状態に合わせて、医師が最適なプランをご提案します。</p>
+      </div>
+      <h3 class="plans-category"><i class="fas fa-syringe"></i> マンジャロ（注射）<span class="plans-category-sub">GIP/GLP-1受容体作動薬</span></h3>
+      <div class="plan-tabs" data-target="glp1-plans">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+        <button class="plan-tab" data-period="6">6ヶ月<span class="tab-badge">最安</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <!-- Plan 1: 2.5mg -->
+        <div class="plan-card"
+          data-price-1="12000" data-price-3="33900" data-price-6="66000"
+          data-label-1="月額（定期便）" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※定期便 12,000円/月（税込）" data-note-3="※3ヶ月一括 33,900円（税込）" data-note-6="※6ヶ月一括 66,000円（税込）"
+          data-monthly-3="11300" data-monthly-6="11000"
+          data-suffix-1="円〜">
+          <div class="plan-name">スタートプラン</div>
+          <div class="plan-title">マンジャロ 2.5mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">月額（定期便）</div>
+            <div class="plan-price">
+              12,000<span class="plan-price-sub">円〜</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> マンジャロ入門用量</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+            <li><i class="fas fa-check-circle"></i> いつでも解約可能</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※定期便 12,000円/月（税込）</div>
+        </div>
+
+        <!-- Plan 2: 5.0mg (Featured) -->
+        <div class="plan-card featured"
+          data-price-1="25000" data-price-3="74000" data-price-6="135000"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 27,000円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※初回25,000円・継続27,000円/月（税込）" data-note-3="※3ヶ月一括 74,000円（税込）" data-note-6="※6ヶ月一括 135,000円（税込）"
+          data-monthly-3="24667" data-monthly-6="22500"
+          data-base-monthly="27000">
+          <div class="plan-name">最も人気の用量</div>
+          <div class="plan-title">マンジャロ 5.0mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">
+              25,000<span class="plan-price-sub">円</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 27,000円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> 最も処方数の多い用量</li>
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+            <li><i class="fas fa-check-circle"></i> いつでも解約可能</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※初回25,000円・継続27,000円/月（税込）</div>
+        </div>
+
+        <!-- Plan 3: 7.5mg -->
+        <div class="plan-card"
+          data-price-1="36000" data-price-3="107000" data-price-6="198000"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 38,000円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※初回36,000円・継続38,000円/月（税込）" data-note-3="※3ヶ月一括 107,000円（税込）" data-note-6="※6ヶ月一括 198,000円（税込）"
+          data-monthly-3="35667" data-monthly-6="33000"
+          data-base-monthly="38000">
+          <div class="plan-name">ハイドーズプラン</div>
+          <div class="plan-title">マンジャロ 7.5mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">
+              36,000<span class="plan-price-sub">円</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 38,000円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> より高い効果を求める方に</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+            <li><i class="fas fa-check-circle"></i> いつでも解約可能</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※初回36,000円・継続38,000円/月（税込）</div>
+        </div>
+
+      </div>
+      <!-- マンジャロ 高用量 -->
+      <h3 class="plans-category"><i class="fas fa-syringe"></i> マンジャロ 高用量（注射）<span class="plans-category-sub">医師の判断で増量</span></h3>
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <div class="plan-card"
+          data-price-1="45000" data-price-3="131000"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 47,000円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回45,000円・継続47,000円/月（税込）" data-note-3="※3ヶ月一括 131,000円（税込）"
+          data-monthly-3="43667"
+          data-base-monthly="47000">
+          <div class="plan-name">ステップアップ</div>
+          <div class="plan-title">マンジャロ 10.0mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">45,000<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 47,000円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> 7.5mgから増量の方向け</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回45,000円・継続47,000円/月（税込）</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="58000" data-price-3="167520"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 60,000円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回58,000円・継続60,000円/月（税込）" data-note-3="※3ヶ月一括 167,520円（税込）"
+          data-monthly-3="55840"
+          data-base-monthly="60000">
+          <div class="plan-name">ハイパワー</div>
+          <div class="plan-title">マンジャロ 12.5mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">58,000<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 60,000円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> さらなる効果を求める方</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回58,000円・継続60,000円/月（税込）</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="65000" data-price-3="188100"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 67,000円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回65,000円・継続67,000円/月（税込）" data-note-3="※3ヶ月一括 188,100円（税込）"
+          data-monthly-3="62700"
+          data-base-monthly="67000">
+          <div class="plan-name">マックスドーズ</div>
+          <div class="plan-title">マンジャロ 15.0mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">65,000<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 67,000円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> GIP/GLP-1 二重作動薬</li>
+            <li><i class="fas fa-check-circle"></i> 最大用量プラン</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回65,000円・継続67,000円/月（税込）</div>
+        </div>
+
+      </div>
+
+      <!-- リベルサス（飲むGLP-1） -->
+      <h3 class="plans-category"><i class="fas fa-capsules"></i> リベルサス（飲むGLP-1）<span class="plans-category-sub">注射が苦手な方に</span></h3>
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <div class="plan-card"
+          data-price-1="7500" data-price-3="20000"
+          data-label-1="月額（定期便）" data-label-3="3ヶ月一括"
+          data-sublabel-1="（税込）" data-sublabel-3=""
+          data-note-1="※定期便 7,500円/月（税込）" data-note-3="※3ヶ月一括 20,000円（税込）"
+          data-monthly-3="6667"
+          data-base-monthly="7500"
+          data-suffix-1="円〜">
+          <div class="plan-name">まず試してみたい方に</div>
+          <div class="plan-title">リベルサス 3mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">月額（定期便）</div>
+            <div class="plan-price">7,500<span class="plan-price-sub">円〜</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> 経口GLP-1受容体作動薬</li>
+            <li><i class="fas fa-check-circle"></i> 注射不要・飲み薬タイプ</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 550円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※定期便 7,500円/月（税込）</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="15500" data-price-3="44500"
+          data-label-1="月額（定期便）" data-label-3="3ヶ月一括"
+          data-sublabel-1="（税込）" data-sublabel-3=""
+          data-note-1="※定期便 15,500円/月（税込）" data-note-3="※3ヶ月一括 44,500円（税込）"
+          data-monthly-3="14833"
+          data-base-monthly="15500"
+          data-suffix-1="円〜">
+          <div class="plan-name">しっかり効果を実感</div>
+          <div class="plan-title">リベルサス 7mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">月額（定期便）</div>
+            <div class="plan-price">15,500<span class="plan-price-sub">円〜</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> 経口GLP-1受容体作動薬</li>
+            <li><i class="fas fa-check-circle"></i> 3mgから増量の方向け</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 550円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※定期便 15,500円/月（税込）</div>
+        </div>
+
+      </div>
+
+      <!-- ダイエットサポート内服薬 -->
+      <h3 class="plans-category"><i class="fas fa-tablets"></i> ダイエットサポート内服薬<span class="plans-category-sub">SGLT2阻害薬</span></h3>
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <div class="plan-card"
+          data-price-1="8500" data-price-3="27600"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 9,500円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回8,500円・継続9,500円/月（税込）" data-note-3="※3ヶ月一括 27,600円（税込）"
+          data-monthly-3="9200"
+          data-base-monthly="9500">
+          <div class="plan-name">SGLT2阻害薬</div>
+          <div class="plan-title">フォシーガ 5mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">8,500<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 9,500円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> 余分な糖を尿から排出</li>
+            <li><i class="fas fa-check-circle"></i> カロリーカット効果</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 550円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回8,500円・継続9,500円/月（税込）</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="7500" data-price-3="24700"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 8,500円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回7,500円・継続8,500円/月（税込）" data-note-3="※3ヶ月一括 24,700円（税込）"
+          data-monthly-3="8233"
+          data-base-monthly="8500">
+          <div class="plan-name">SGLT2阻害薬</div>
+          <div class="plan-title">ルセフィ錠 2.5mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">7,500<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 8,500円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> 余分な糖を尿から排出</li>
+            <li><i class="fas fa-check-circle"></i> カロリーカット効果</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 550円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回7,500円・継続8,500円/月（税込）</div>
+        </div>
+
+      </div>
+
+      <!-- セットプラン -->
+      <h3 class="plans-category"><i class="fas fa-box-open"></i> セットプラン<span class="plans-category-sub">組み合わせでさらに効果的</span></h3>
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <div class="plan-card"
+          data-price-1="10930" data-price-3="37600"
+          data-label-1="初回" data-label-3="3ヶ月一括"
+          data-sublabel-1="継続 12,930円/月（税込）" data-sublabel-3=""
+          data-note-1="※初回10,930円・継続12,930円/月（税込）" data-note-3="※3ヶ月一括 37,600円（税込）"
+          data-monthly-3="12533"
+          data-base-monthly="12930">
+          <div class="plan-name">Wアプローチ</div>
+          <div class="plan-title">メトホルミン＋フォシーガ</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">10,930<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 12,930円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> メトホルミン500mg + フォシーガ5mg</li>
+            <li><i class="fas fa-check-circle"></i> 糖質コントロール×排出のW効果</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 550円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回10,930円・継続12,930円/月（税込）</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="13000" data-price-3=""
+          data-label-1="月額" data-label-3=""
+          data-sublabel-1="（税込・配送料込）" data-sublabel-3=""
+          data-note-1="※マンジャロ2.5mg＋ナウゼリン セット" data-note-3=""
+          data-base-monthly="13000">
+          <div class="plan-name">吐き気対策セット</div>
+          <div class="plan-title">マンジャロ2.5mg＋ナウゼリン</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">月額</div>
+            <div class="plan-price">13,000<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">（税込・配送料込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> マンジャロ2.5mg + 吐き気止め</li>
+            <li><i class="fas fa-check-circle"></i> はじめての注射で不安な方に</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※マンジャロ2.5mg＋ナウゼリン セット</div>
+        </div>
+
+        <div class="plan-card"
+          data-price-1="16000" data-price-3=""
+          data-label-1="月額" data-label-3=""
+          data-sublabel-1="（税込・配送料込）" data-sublabel-3=""
+          data-note-1="※マンジャロ2.5mg＋防風通聖散 セット" data-note-3=""
+          data-base-monthly="16000">
+          <div class="plan-name">漢方併用セット</div>
+          <div class="plan-title">マンジャロ2.5mg＋防風通聖散</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">月額</div>
+            <div class="plan-price">16,000<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">（税込・配送料込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> マンジャロ2.5mg + 防風通聖散</li>
+            <li><i class="fas fa-check-circle"></i> 脂肪燃焼を漢方でサポート</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※マンジャロ2.5mg＋防風通聖散 セット</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GLP-1 MECHANISM -->
+  <section class="section mechanism-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">HOW IT WORKS</span>
+        <h2 class="section-title">GLP-1の<span class="accent">3つの働き</span></h2>
+        <p class="section-sub">GLP-1受容体作動薬は、体の自然なメカニズムにアプローチしてダイエットをサポートします。</p>
+      </div>
+      <div class="mechanism-grid">
+
+        <div class="mechanism-card">
+          <span class="mechanism-emoji">🧠</span>
+          <div class="mechanism-title">食欲を抑える</div>
+          <p class="mechanism-desc">
+            脳の満腹中枢に直接作用し、食欲を自然に抑制。食べ過ぎを防ぎ、無理なくカロリーコントロールが可能になります。
+          </p>
+        </div>
+
+        <div class="mechanism-card">
+          <span class="mechanism-emoji">📉</span>
+          <div class="mechanism-title">血糖値を下げる</div>
+          <p class="mechanism-desc">
+            インスリン分泌を促進し、食後の血糖値上昇を緩やかにします。血糖値の安定が、脂肪の蓄積を抑えることにつながります。
+          </p>
+        </div>
+
+        <div class="mechanism-card">
+          <span class="mechanism-emoji">🔥</span>
+          <div class="mechanism-title">胃の動きを穏やかに</div>
+          <p class="mechanism-desc">
+            胃の動きを穏やかにし、食事の消化吸収を緩やかにします。少量の食事でも満足感が持続し、自然なカロリー制限につながります。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAUTION -->
+  <section class="caution-section">
+    <div class="caution-inner">
+      <div class="caution-title">
+        <i class="fas fa-exclamation-circle"></i>
+        ご注意事項
+      </div>
+      <ul class="caution-list">
+        <li>本治療は自由診療（保険適用外）です。費用は全額自己負担となります。</li>
+        <li>効果には個人差があります。すべての方に同様の効果が保証されるものではありません。</li>
+        <li>GLP-1受容体作動薬の副作用として吐き気・嘔吐・下痢・便秘・腹痛・食欲減退などの消化器症状が生じる場合があります。多くは使用初期に出やすく、時間とともに軽減します。</li>
+        <li>まれに低血糖（冷汗・動悸・手足の震え・めまい）、急性膵炎（激しい上腹部痛・背部痛・嘔吐）、胆嚢炎などの重篤な副作用が報告されています。異常を感じた場合は直ちに医師にご相談ください。</li>
+        <li>SGLT2阻害薬（フォシーガ・ルセフィ）では、尿路感染症・性器感染症・頻尿・口渇・脱水などが生じる場合があります。十分な水分補給を心がけてください。</li>
+        <li>医師のオンライン診察が必要です。問診内容によっては処方できない場合があります。</li>
+        <li>妊娠中・授乳中の方、膵炎の既往がある方、甲状腺髄様がん・MEN2の既往または家族歴がある方、重度の腎機能障害・透析中の方、1型糖尿病の方は処方できません。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="section-inner" style="max-width: 760px">
+      <div class="section-center">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">よくある質問</h2>
+        <p class="section-sub">GLP-1ダイエットに関するよくある疑問にお答えします。</p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>効果はいつから出ますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              個人差がありますが、使用開始から2〜4週間で食欲の変化を感じ始める方が多いです。体重への効果は1〜3ヶ月ほどで現れることが多く、継続使用によりさらなる効果が期待できます。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>副作用はありますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              GLP-1受容体作動薬では、主な副作用として吐き気・下痢・便秘・腹部不快感が報告されています。これらは使用初期に出やすく、多くの場合は時間とともに軽減します。まれに低血糖や急性膵炎の報告があります。SGLT2阻害薬では頻尿・口渇・尿路感染症などが生じることがあります。気になる症状があればLINEでご相談ください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>他の薬との併用はできますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              現在服用中のお薬がある場合は、オンライン診察時に必ずお伝えください。医師が安全性を確認した上で処方の可否を判断します。特に糖尿病治療薬を使用されている方は必ずお知らせください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>解約・休止はできますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              はい、縛りは一切ありません。次回発送日の3日前までにLINEでご連絡いただければ、いつでも解約・休止が可能です。違約金や解約手数料も発生しません。
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GLP-1 CTA -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <h2 class="section-title">今すぐLINEで<br>無料相談</h2>
+      <p class="section-sub">どのプランが向いているか、副作用のご不安など、お気軽にご相談ください。</p>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-lg">
+        <i class="fab fa-line"></i>
+        LINEで無料相談する
+      </a>
+      <div class="cta-note-white">
+        <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
+        <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <div>
+      ※本治療は公的医療保険が適用されない自由診療です。費用は全額自己負担となります。<br>
+      ※効果・効能には個人差があります。<br>
+      ※マンジャロ（チルゼパチド）は国内では2型糖尿病治療薬として承認されていますが、肥満治療目的での使用は国内未承認（適応外使用）です。<br>
+      ※リベルサス（セマグルチド）は国内では2型糖尿病治療薬として承認されていますが、肥満治療目的での使用は国内未承認（適応外使用）です。<br>
+      ※フォシーガ（ダパグリフロジン）・ルセフィ（ルセオグリフロジン）は国内では2型糖尿病等の治療薬として承認されていますが、肥満治療目的での使用は国内未承認（適応外使用）です。<br>
+      ※本診療で処方される医薬品は、適応外使用のため医薬品副作用被害救済制度の対象外です。<br>
+      ※医薬品は国内の医薬品卸売販売業者より購入しています。<br>
+      ※医師の診察に基づいた処方となります。医師の判断により処方できない場合があります。
+    </div>
+  </div>
+
+</div><!-- /page-glp1 -->
+
+<!-- ==================== BEAUTY PAGE ==================== -->
+<div id="page-beauty" class="page">
+
+  <!-- BREADCRUMB -->
+  <div style="background: white; border-bottom: 1px solid var(--gray3);">
+    <div class="breadcrumb">
+      <a onclick="showPage('top')">トップ</a>
+      <span>›</span>
+      美容内服
+    </div>
+  </div>
+
+  <!-- BEAUTY HERO -->
+  <section class="hero-beauty">
+    <div class="hero-beauty-inner">
+      <div class="hero-eyebrow">
+        <i class="fas fa-star"></i>
+        医師処方 · 美容内服オンライン
+      </div>
+      <h1 class="hero-title">
+        美容内服 オンライン処方
+      </h1>
+      <p class="hero-desc">
+        内側からケアする、医師処方の美容薬。美白・美肌・エイジングケア。<br>
+        スマホ1台で処方を受け、毎月自宅に届きます。
+      </p>
+      <div class="hero-beauty-badges">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> 診察・配送料 2,000円
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> 縛りなし
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> オンライン完結
+        </div>
+      </div>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line">
+        <i class="fab fa-line"></i> LINEで無料相談
+      </a>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="section plans-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">PLANS</span>
+        <h2 class="section-title">料金プラン</h2>
+        <p class="section-sub">お悩みやご希望に合わせて、医師が最適なプランをご提案します。</p>
+      </div>
+      <h3 class="plans-category"><i class="fas fa-sparkles"></i> 美容内服セット<span class="plans-category-sub">美白・透明感アップ</span></h3>
+      <div class="plan-tabs" data-target="beauty-plans">
+        <button class="plan-tab active" data-period="1">1ヶ月</button>
+        <button class="plan-tab" data-period="3">3ヶ月<span class="tab-badge">おトク</span></button>
+        <button class="plan-tab" data-period="6">6ヶ月<span class="tab-badge">最安</span></button>
+      </div>
+      <div class="plans-grid">
+
+        <!-- Plan 1: はじめて -->
+        <div class="plan-card"
+          data-price-1="2980" data-price-3="9900" data-price-6="18600"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 3,480円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※3種セット・日2回 60錠/月" data-note-3="※3種セット・3ヶ月一括 9,900円（税込）" data-note-6="※3種セット・6ヶ月一括 18,600円（税込）"
+          data-monthly-3="3300" data-monthly-6="3100"
+          data-base-monthly="3480">
+          <div class="plan-name">はじめての方に</div>
+          <div class="plan-title">はじめての美容内服セット</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">
+              2,980<span class="plan-price-sub">円</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 3,480円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> ユベラ（ビタミンE・保湿・血行促進）</li>
+            <li><i class="fas fa-check-circle"></i> シナール（ビタミンC・美白・コラーゲン）</li>
+            <li><i class="fas fa-check-circle"></i> ハイチオール（L-システイン・メラニン抑制）</li>
+            <li><i class="fas fa-check-circle"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※3種セット・日2回 60錠/月</div>
+        </div>
+
+        <!-- Plan 2: 透明感 (Featured) -->
+        <div class="plan-card featured"
+          data-price-1="3980" data-price-3="9800" data-price-6="27000"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 4,980円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※3種セット・日3回 90錠/月" data-note-3="※3種セット・3ヶ月一括 9,800円（税込）" data-note-6="※3種セット・6ヶ月一括 27,000円（税込）※価格未定"
+          data-monthly-3="3267" data-monthly-6="4500"
+          data-base-monthly="4980">
+          <div class="plan-name">人気No.1</div>
+          <div class="plan-title">透明感爆上げセット</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">
+              3,980<span class="plan-price-sub">円</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 4,980円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> ユベラ（ビタミンE・保湿・血行促進）</li>
+            <li><i class="fas fa-check-circle"></i> シナール（ビタミンC・美白・コラーゲン）</li>
+            <li><i class="fas fa-check-circle"></i> ハイチオール（L-システイン・メラニン抑制）</li>
+            <li><i class="fas fa-check-circle"></i> 日3回 高用量プロトコル</li>
+            <li><i class="fas fa-check-circle"></i> 診察・配送料 2,000円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※3種セット・日3回 90錠/月</div>
+        </div>
+
+        <!-- Plan 3: とことん美白 -->
+        <div class="plan-card"
+          data-price-1="6480" data-price-3="17800" data-price-6="37800"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 6,980円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※5種セット・日3回 90錠/月。ピル服用中・血栓症の既往がある方はトラネキサム酸を含む本プラン不可。" data-note-3="※5種セット・3ヶ月一括 17,800円（税込）" data-note-6="※5種セット・6ヶ月一括 37,800円（税込）※価格未定"
+          data-monthly-3="5933" data-monthly-6="6300"
+          data-base-monthly="6980">
+          <div class="plan-name">本格美白を目指す方に</div>
+          <div class="plan-title">とことん美白セット</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price">
+              6,480<span class="plan-price-sub">円</span>
+            </div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 6,980円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle"></i> ユベラ（ビタミンE・保湿）</li>
+            <li><i class="fas fa-check-circle"></i> シナール（ビタミンC・美白）</li>
+            <li><i class="fas fa-check-circle"></i> ハイチオール（メラニン抑制）</li>
+            <li><i class="fas fa-check-circle"></i> トラネキサム酸（肝斑・シミ対策）</li>
+            <li><i class="fas fa-check-circle"></i> ノイロビタン（ビタミンB・肌荒れ改善）</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag">診察・配送料 2,000円</span>
+            <span class="free-tag">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn">
+            <i class="fab fa-line"></i> LINEから申し込む
+          </a>
+          <div class="plan-note">※5種セット・日3回 90錠/月。ピル服用中・血栓症の既往がある方はトラネキサム酸を含む本プラン不可。</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INGREDIENTS TABLE -->
+  <section class="section ingredients-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">INGREDIENTS</span>
+        <h2 class="section-title">成分一覧</h2>
+        <p class="section-sub">医師が厳選した有効成分を、最適な組み合わせで処方します。</p>
+      </div>
+      <div class="med-table-wrap">
+        <table class="med-table">
+          <thead>
+            <tr>
+              <th>成分名</th>
+              <th>主な効果</th>
+              <th>含有プラン</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ユベラ（ビタミンE）</strong></td>
+              <td>血行促進・抗酸化・ターンオーバー促進</td>
+              <td>はじめて / 透明感 / とことん美白</td>
+            </tr>
+            <tr>
+              <td><strong>シナール（ビタミンC + パントテン酸）</strong></td>
+              <td>コラーゲン生成・美白・抗酸化</td>
+              <td>はじめて / 透明感 / とことん美白</td>
+            </tr>
+            <tr>
+              <td><strong>ハイチオール（L-システイン）</strong></td>
+              <td>メラニン生成抑制・美白・肝機能サポート</td>
+              <td>はじめて / 透明感 / とことん美白</td>
+            </tr>
+            <tr>
+              <td><strong>トラネキサム酸</strong></td>
+              <td>シミ・肝斑改善・美白</td>
+              <td>とことん美白（※ピル服用中・血栓症の既往がある方は不可）</td>
+            </tr>
+            <tr>
+              <td><strong>ノイロビタン（ビタミンB群）</strong></td>
+              <td>皮膚・粘膜の健康維持・肌荒れ改善</td>
+              <td>とことん美白</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center; margin-top: 20px; font-size:13px; color: var(--text-muted);">
+        <i class="fas fa-info-circle" style="color:var(--pink)"></i>
+        お悩みに合わせて、既存プランからお選びいただけます。
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="section-inner" style="max-width: 760px">
+      <div class="section-center">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">よくある質問</h2>
+        <p class="section-sub">美容内服に関するよくある疑問にお答えします。</p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>いつから効果が出ますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              肌の生まれ変わり（ターンオーバー）には約28〜70日かかるため、効果を実感するには最低1〜3ヶ月の継続が目安です。美白効果は3〜6ヶ月の継続をおすすめします。定期便なら飲み忘れを防ぎ、継続しやすくなります。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>市販のサプリと何が違いますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              医師が処方する内服薬は、市販サプリよりも成分の含有量・品質基準が高く、医薬品として効果が認められています。また、お肌の状態や生活習慣に合わせて医師が最適な処方を選択するため、より効果的なケアが可能です。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>プランは選べますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              はい、お悩みや目的に合わせて既存プランからお選びいただけます。「シミが気になる」「肌荒れを改善したい」など、お悩みをLINEでご相談いただければ、最適なプランをご提案します。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            <div class="faq-q-icon">Q</div>
+            <span>副作用はありますか？</span>
+            <div class="faq-q-toggle">+</div>
+          </div>
+          <div class="faq-a-wrap">
+            <div class="faq-a">
+              いずれも比較的安全性の高い医薬品ですが、胃部不快感・悪心・下痢などの消化器症状が現れることがあります。症状が現れた場合は服用を中止し、医師にご相談ください。トラネキサム酸は血栓リスクがあるため、ピル服用中の方・血栓症の既往がある方は服用できません。
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAUTY CTA -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <h2 class="section-title">今すぐLINEで<br>無料相談</h2>
+      <p class="section-sub">どの成分が向いているか、お悩みに合わせてご提案します。お気軽にご相談ください。</p>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-lg">
+        <i class="fab fa-line"></i>
+        LINEで無料相談する
+      </a>
+      <div class="cta-note-white">
+        <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
+        <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <div>
+      ※本治療は公的医療保険が適用されない自由診療です。費用は全額自己負担となります。<br>
+      ※効果・効能には個人差があります。<br>
+      ※一部の薬剤は美容目的での使用が承認適応外となるため、医薬品副作用被害救済制度の対象とならない場合があります。<br>
+      ※主な副作用：胃部不快感、悪心、下痢、便秘、食欲不振など。トラネキサム酸はピル服用中・血栓症の既往がある方・腎機能障害のある方・妊娠中の方は服用できません。<br>
+      ※医薬品は国内の医薬品卸売販売業者より購入しています。<br>
+      ※医師の診察に基づいた処方となります。医師の判断により処方できない場合があります。
+    </div>
+  </div>
+
+</div><!-- /page-beauty -->
+
+<!-- ==================== ANTI-AGING PAGE ==================== -->
+<div id="page-antiaging" class="page">
+
+  <!-- BREADCRUMB -->
+  <div style="background: white; border-bottom: 1px solid var(--gray3);">
+    <div class="breadcrumb">
+      <a onclick="showPage('top')">トップ</a>
+      <span>›</span>
+      アンチエイジング
+    </div>
+  </div>
+
+  <!-- ANTI-AGING HERO -->
+  <section class="hero-antiaging">
+    <div class="hero-antiaging-inner">
+      <div class="hero-eyebrow"><i class="fas fa-dna"></i> ANTI-AGING</div>
+      <h1 class="hero-title">
+        細胞レベルから始める<br>
+        <span class="accent">エイジングケア</span>
+      </h1>
+      <p class="hero-desc">
+        2型糖尿病治療薬として60年以上の臨床実績を持つメトホルミン。<br>
+        AMPK活性化による抗老化アプローチを、オンライン診療で手軽に始められます。
+      </p>
+      <div class="hero-antiaging-badges">
+        <div class="hero-badge"><i class="fas fa-star"></i> 月額 2,980円〜</div>
+        <div class="hero-badge"><i class="fas fa-star"></i> オンライン完結</div>
+        <div class="hero-badge"><i class="fas fa-star"></i> 定期縛りなし</div>
+      </div>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-lg" style="background:#e4b772; box-shadow:0 4px 18px rgba(228,183,114,0.4);">
+        <i class="fab fa-line"></i> LINEで無料相談
+      </a>
+    </div>
+  </section>
+
+  <!-- MECHANISM -->
+  <section class="section antiaging-mechanism">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">HOW IT WORKS</span>
+        <h2 class="section-title">メトホルミンの<span class="accent">3つの働き</span></h2>
+        <p class="section-sub">2型糖尿病治療薬として60年以上の臨床実績を持つ医薬品が、エイジングケア分野で再注目されています。</p>
+      </div>
+      <div class="flow-steps" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="flow-step reveal">
+          <div class="flow-step-num">01</div>
+          <div class="flow-step-title">AMPK活性化</div>
+          <p class="flow-step-desc">細胞のエネルギーセンサーであるAMPKを活性化し、オートファジーの促進とミトコンドリア機能の改善により、細胞の老化進行を抑制します。</p>
+        </div>
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-step-num">02</div>
+          <div class="flow-step-title">血糖値・代謝改善</div>
+          <p class="flow-step-desc">インスリン感受性を高め、血糖値の安定化と脂質代謝の改善をサポート。体の中から若々しさを保ちます。</p>
+        </div>
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-step-num">03</div>
+          <div class="flow-step-title">抗炎症・抗酸化</div>
+          <p class="flow-step-desc">慢性的な微小炎症を抑制し、酸化ストレスを軽減。世界的に研究が進むエイジングケアアプローチです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="section plans-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">PLANS</span>
+        <h2 class="section-title">料金プラン</h2>
+        <p class="section-sub">まずは1ヶ月からお試しいただけます。長期プランほどおトクです。</p>
+      </div>
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-period="1" style="--pink:#b8860b; border-color:#b8860b; color:#b8860b;">1ヶ月</button>
+        <button class="plan-tab" data-period="3" style="--pink:#b8860b; border-color:#b8860b; color:#b8860b;">3ヶ月<span class="tab-badge">おトク</span></button>
+        <button class="plan-tab" data-period="6" style="--pink:#b8860b; border-color:#b8860b; color:#b8860b;">6ヶ月<span class="tab-badge">最安</span></button>
+      </div>
+      <div class="plans-grid-single">
+
+        <div class="plan-card featured no-badge" style="border-color:#b8860b; box-shadow:0 8px 32px rgba(184,134,11,0.18);"
+          data-price-1="2980" data-price-3="9800" data-price-6="18800"
+          data-label-1="初回" data-label-3="3ヶ月一括" data-label-6="6ヶ月一括"
+          data-sublabel-1="継続 3,480円/月（税込）" data-sublabel-3="" data-sublabel-6=""
+          data-note-1="※初回2,980円・継続3,480円/月（税込）30日分60錠" data-note-3="※3ヶ月一括 9,800円（税込）" data-note-6="※6ヶ月一括 18,800円（税込）"
+          data-monthly-3="3267" data-monthly-6="3133"
+          data-base-monthly="3480">
+          <div class="plan-card-featured-label" style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#b8860b;color:white;font-size:12px;font-weight:700;padding:4px 18px;border-radius:14px;white-space:nowrap;">注目</div>
+          <div class="plan-name">エイジングケアで注目の医薬品</div>
+          <div class="plan-title">メトホルミン 500mg</div>
+          <div class="plan-price-wrap">
+            <div class="plan-price-label">初回</div>
+            <div class="plan-price" style="color:#b8860b;">2,980<span class="plan-price-sub">円</span></div>
+            <div class="plan-price-label plan-sublabel" style="margin-top:4px">継続 3,480円/月（税込）</div>
+            <div class="plan-monthly"></div>
+            <div class="plan-discount"></div>
+          </div>
+          <ul class="plan-items">
+            <li><i class="fas fa-check-circle" style="color:#b8860b"></i> AMPK活性化で細胞の老化を抑制</li>
+            <li><i class="fas fa-check-circle" style="color:#b8860b"></i> 血糖値コントロール・代謝改善</li>
+            <li><i class="fas fa-check-circle" style="color:#b8860b"></i> 海外の臨床試験（TAME試験）が進行中</li>
+            <li><i class="fas fa-check-circle" style="color:#b8860b"></i> 毎月定期便でお届け</li>
+            <li><i class="fas fa-check-circle" style="color:#b8860b"></i> 診察・配送料 550円</li>
+          </ul>
+          <div class="plan-free-tags">
+            <span class="free-tag" style="background:#f5f0e0; color:#b8860b;">診察・配送料 550円</span>
+            <span class="free-tag" style="background:#f5f0e0; color:#b8860b;">縛りなし</span>
+          </div>
+          <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line plan-btn"><i class="fab fa-line"></i> LINEから申し込む</a>
+          <div class="plan-note">※初回2,980円・継続3,480円/月（税込）30日分60錠</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background:#f5f0e0; border-color:#e8dcc8;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 class="section-title">まずはLINEで<br>無料相談</h2>
+      <p class="section-sub">
+        メトホルミンが自分に合うか、副作用が心配など、お気軽にご相談ください。
+      </p>
+      <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-lg" style="background:#b8860b; box-shadow:0 4px 18px rgba(184,134,11,0.35);">
+        <i class="fab fa-line"></i> LINEで無料相談
+      </a>
+      <div class="cta-note-white">
+        <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
+        <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <div>
+      ※本治療は公的医療保険が適用されない自由診療です。費用は全額自己負担となります。<br>
+      ※効果・効能には個人差があります。<br>
+      ※メトホルミンは国内で2型糖尿病治療薬として承認されていますが、エイジングケア目的での処方は国内未承認（適応外使用）です。<br>
+      ※同一成分の国内承認薬（メトグルコ錠等）は2型糖尿病の効能で承認されています。エイジングケアを効能とする承認医薬品はありません。<br>
+      ※米国FDAにて2型糖尿病治療薬として承認済。エイジングケア目的での承認は各国いずれも取得されていません。米国でTAME試験（非糖尿病高齢者対象）が進行中ですが、結果は未発表です。<br>
+      ※適応外使用のため、医薬品副作用被害救済制度の対象外です。<br>
+      ※医薬品は国内の医薬品卸売販売業者より購入しています。<br>
+      ※主な副作用：下痢・吐き気・腹痛・食欲不振などの消化器症状。まれに乳酸アシドーシス（全身倦怠感・筋肉痛・過呼吸等）が報告されています。<br>
+      ※腎機能障害・肝機能障害のある方、心不全の方、過度の飲酒をされる方、妊娠中・授乳中の方、ヨード造影剤使用予定の方は処方できません。<br>
+      ※医師の診察に基づいた処方となります。医師の判断により処方できない場合があります。
+    </div>
+  </div>
+
+</div><!-- /page-antiaging -->
+
+<!-- ==================== FAQ PAGE ==================== -->
+<div id="page-faq" class="page">
+  <div class="legal-page">
+    <div class="legal-breadcrumb">
+      <a onclick="showPage('top')">トップ</a><span>&gt;</span>よくある質問
+    </div>
+    <h1 class="legal-page-header">よくある質問</h1>
+    <p class="legal-page-intro">各サービスに関するよくあるご質問をまとめました。</p>
+
+    <!-- GLP-1ダイエット -->
+    <h2 class="faq-category-title">GLP-1ダイエット</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>効果はいつから出ますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">個人差がありますが、使用開始から2〜4週間で食欲の変化を感じ始める方が多いです。体重への効果は1〜3ヶ月ほどで現れることが多く、継続使用によりさらなる効果が期待できます。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>副作用はありますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">GLP-1受容体作動薬では、主な副作用として吐き気・下痢・便秘・腹部不快感が報告されています。これらは使用初期に出やすく、多くの場合は時間とともに軽減します。まれに低血糖や急性膵炎の報告があります。SGLT2阻害薬では頻尿・口渇・尿路感染症などが生じることがあります。気になる症状があればLINEでご相談ください。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>他の薬との併用はできますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">現在服用中のお薬がある場合は、オンライン診察時に必ずお伝えください。医師が安全性を確認した上で処方の可否を判断します。特に糖尿病治療薬を使用されている方は必ずお知らせください。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>解約・休止はできますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">はい、縛りは一切ありません。次回発送日の3日前までにLINEでご連絡いただければ、いつでも解約・休止が可能です。違約金や解約手数料も発生しません。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 美容内服 -->
+    <h2 class="faq-category-title">美容内服</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>いつから効果が出ますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">肌の生まれ変わり（ターンオーバー）には約28〜70日かかるため、効果を実感するには最低1〜3ヶ月の継続が目安です。美白効果は3〜6ヶ月の継続をおすすめします。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>市販のサプリと何が違いますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">医師が処方する内服薬は、市販サプリよりも成分の含有量・品質基準が高く、医薬品として効果が認められています。また、お肌の状態や生活習慣に合わせて医師が最適な処方を選択するため、より効果的なケアが可能です。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>プランは選べますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">はい、お悩みや目的に合わせて既存プランからお選びいただけます。「シミが気になる」「肌荒れを改善したい」など、お悩みをLINEでご相談いただければ、最適なプランをご提案します。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>副作用はありますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">いずれも比較的安全性の高い医薬品ですが、胃部不快感・悪心・下痢などの消化器症状が現れることがあります。症状が現れた場合は服用を中止し、医師にご相談ください。トラネキサム酸は血栓リスクがあるため、ピル服用中の方・血栓症の既往がある方は服用できません。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- アンチエイジング -->
+    <h2 class="faq-category-title">アンチエイジング</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>メトホルミンはどんな薬ですか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">メトホルミンは2型糖尿病治療薬として60年以上の臨床実績を持つ医薬品です。近年、AMPK活性化による抗老化作用が注目され、米国ではTAME試験（非糖尿病高齢者3,000人対象）が進行中です。なお、エイジングケア目的での使用は国内未承認（適応外使用）です。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>副作用はありますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">主な副作用として消化器症状（下痢・吐き気・腹部不快感）が報告されています。多くの場合は服用初期に出やすく、時間とともに軽減します。まれに乳酸アシドーシスのリスクがあるため、医師の指示に従って服用してください。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- サービス全般 -->
+    <h2 class="faq-category-title">サービス全般</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>オンライン診療の流れは？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">LINEで友だち追加 → 問診に回答 → 医師がオンラインで診察 → 処方・決済 → ご自宅に配送、という流れです。すべてスマホで完結し、来院の必要はありません。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>配送にかかる日数は？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">処方確定後、通常3〜5営業日でお届けします。配送状況はLINEで通知されますので、ご安心ください。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>支払方法は何がありますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">クレジットカード（VISA・Mastercard・JCB・AMEX）、Apple Pay、atone翌月払い（コンビニ/口座振替）、後払い（コンビニ/銀行ATM）に対応しています。定期便の場合は毎月自動で決済されます。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>定期便の解約方法は？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">LINEでいつでも解約・休止のご連絡が可能です。次回発送日の3日前までにお知らせください。解約金や違約金は一切発生しません。</div>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          <span>処方薬の返品・交換はできますか？</span>
+          <div class="faq-q-toggle">+</div>
+        </div>
+        <div class="faq-a-wrap">
+          <div class="faq-a">医薬品の性質上、お届け後の返品・交換は原則としてお受けできません。配送中の破損や誤配送の場合は、LINEにてご連絡ください。速やかに対応いたします。</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /page-faq -->
+
+<!-- ==================== TERMS PAGE (利用規約) ==================== -->
+<div id="page-terms" class="page">
+  <div class="legal-page">
+    <div class="legal-breadcrumb">
+      <a onclick="showPage('top')">トップ</a><span>&gt;</span>利用規約
+    </div>
+    <h1 class="legal-page-header">利用規約</h1>
+    <p class="legal-page-intro">
+      本利用規約（以下「本規約」といいます。）は、株式会社シアン（以下「当社」といいます。）が運営提供するサービス「キレイレポオンライン」（以下「本サービス」といいます。）の利用に関する条件を定めています。本サービスをご利用いただくためには、本規約にご同意いただく必要があります。
+    </p>
+
+    <!-- 第1条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第1条（総則）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>本規約は、本サービスの提供条件及び本サービスの利用に関し、本サービスを利用するお客様（以下「ユーザー」といいます。）と当社の間の権利義務関係を定めることを目的とし、ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。</li>
+          <li>本サービス上で表示される確認事項、注意書き、ガイドラインの他本サービス内で提供される個別のサービス（以下「個別サービス」といいます。）の利用規約等（以下、総称して「個別利用規約」といいます。）は、本規約の一部を構成するものとします。</li>
+          <li>本規約と個別利用規約の定めが異なる場合、個別利用規約が優先して適用されるものとします。</li>
+          <li>ユーザーは、本サービスを利用することにより、本規約及び個別利用規約（以下「本規約等」といいます。）の全ての記載内容について同意したものとみなされます。</li>
+          <li>「登録医療機関等」とは、本サービス等に登録しており、ユーザーに対して診療や服薬指導を提供する医療機関、調剤薬局やその他法人であり、診療および服薬指導等の業務に従事する者をいいます。</li>
+          <li>「登録医療従事者」とは、本サービスに登録している医師、看護師、薬剤師その他の医療従事者であり、登録医療機関等に勤務して診療および服薬指導等の業務に従事する者をいいます。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第2条（利用料金）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>ユーザーは、本サービスの利用にあたり、本サービス上に表示される料金（以下、「本サービス利用料」といいます。）を当社に対して支払うものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第3条（本規約等の変更）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>当社は、ユーザーの事前の承諾を得ることなく、本規約等を任意に改定することができるものとします。</li>
+          <li>改定後の本規約等は、特に当社が規定した場合を除き、本サービスもしくは当社が運営するウェブサイトに掲示したとき、又は当社がユーザーに対して告知の案内を配信したときのいずれか早い時期をもって、その効力が生じるものとします。</li>
+          <li>ユーザーが、変更後の本規約等に同意できない場合は、直ちに本サービスの利用を中止するものとします。</li>
+          <li>ユーザーが、本規約等の変更の効力が生じた後に本サービスを利用する場合には、変更後の規約等の全ての記載内容に同意したものとみなされます。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第4条（アカウント管理）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>本サービス又は個別サービスを利用するにあたり、ユーザーは、自己の責任において、自己のアカウントやパスワード等を適切に管理及び保管するものとし、これを第三者に利用させ、又は貸与、譲渡、名義変更、売買等をしてはならないものとします。</li>
+          <li>当社は、最終のアクセスから1年間以上アクセスがないユーザーのアカウントを、あらかじめユーザーに通知することなく削除することができるものとします。</li>
+          <li>アカウントやパスワードの管理不十分、使用上の過誤、第三者の使用等によって生じた損害に関する責任はユーザーが負うものとし、当社は一切の責任を負わないものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第5条（利用資格の停止）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>当社は、ユーザーが以下の各号のいずれかの事由に該当すると判断した場合、本サービス及び個別サービスの利用を拒否することがあり、その理由について一切開示する義務を負わないものとします。
+            <ul class="legal-sub-list">
+              <li>(1) 当社に提供した申込情報の全部又は一部につき虚偽、誤記又は記載漏れがあった場合</li>
+              <li>(2) 未成年者、成年被後見人、被保佐人又は被補助人のいずれかであり、法定代理人、後見人、保佐人又は補助人の同意等を得ていなかった場合</li>
+              <li>(3) 本規約等に違反する場合</li>
+              <li>(4) 本サービス内の支払料金その他の債務の履行を遅滞し、又は支払を拒否した場合</li>
+              <li>(5) 暴力団、暴力団員、右翼団体、反社会的勢力、その他これらに準ずる者（以下「反社会的勢力等」といいます。）である、又は資金提供その他を通じて反社会的勢力等の維持、運営若しくは経営に協力若しくは関与する等反社会的勢力等との何らかの交流若しくは関与を行っていると当社が判断した場合</li>
+              <li>(6) ユーザーが過去当社との契約に違反した者又はその関係者であると当社が判断した場合</li>
+              <li>(7) ユーザーが当社の事業と競業する企業又は団体等に所属もしくは関係すると当社が判断した場合</li>
+              <li>(8) ユーザーが当社の事業と同一又は類似する企業、団体等に所属もしくは関係すると当社が判断した場合</li>
+            </ul>
+          </li>
+          <li>ユーザーは、当社が前項に定める措置を講じた場合、当該措置に起因する結果に関し、当社を免責するものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第6条（個人情報等の取扱い）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>当社は、ユーザーから取得した個人情報等を、当社が別途定める「プライバシーポリシー」その他個人情報の取り扱いに関して定める規約等に基づき、適切に取り扱うものとします。</li>
+          <li>本サービス及び個別サービスを利用する場合、ユーザーが提供する個人情報等を当社が「プライバシーポリシー」その他個人情報の取り扱いに関して定める規約等に基づいて扱うことに同意したものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第7条（本サービスの提供）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>本サービス及び個別サービスに関連する一切の権利は、当社又は当社に権利許諾した第三者に帰属します。</li>
+          <li>当社は、ユーザーに対し、本規約等に従って本サービス及び個別サービスを利用する権利を許諾します。</li>
+          <li>ユーザーは、本サービスを利用するにあたり、携帯電話機、通信機器、通信手段及び電力などをユーザーの費用と責任で用意するものとします。</li>
+          <li>当社は、本サービスが全ての携帯端末及びOSに対応することを保証するものではありません。</li>
+          <li>ユーザーは、本サービスへの登録を完了することにより、登録医療機関等に所属する登録医療従事者に対し、診療、服薬指導等の予約をすることができます。</li>
+          <li>ユーザーは、診療、服薬指導等の予約にあたり、本サービスに定めるところに従い、必要な情報を入力するものとします。</li>
+          <li>ユーザーは、本サービスを用いて診療等を受ける場合、登録医療機関等において対面での診療等を受けた後でなければオンラインでのサービス提供を受けられない場合があることに同意するものとします。</li>
+          <li>ユーザーが入力した情報が、当該登録医療機関等に共有されることについて同意するものとします。</li>
+          <li>ユーザーが予約を完了した時点で、ユーザーと登録医療機関等との間で診療等に関する契約が締結されるものとします。当社はこれらの行為についていかなる責任も負わないものとします。</li>
+          <li>診療および服薬指導等に関連して生じた紛争等については、ユーザー及び登録医療機関等との間で解決するものとします。</li>
+          <li>ユーザーは、処方薬の配送が行われることについて予め同意します。当社は、ユーザーが登録した住所等の情報に誤りがあった場合における誤配送等についての責任を一切負わないものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第8条（第三者のサービス及びコンテンツ）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>本サービスは、第三者が提供するサービス（以下「パートナーサービス」）を含む場合があります。かかるパートナーサービスに対する責任は、提供する事業者が負うものとします。</li>
+          <li>パートナーサービスを利用する場合、当社はアカウント情報を提供する場合があります。</li>
+          <li>当社は、パートナー事業者から利用履歴等の情報の提供を受ける場合があります。</li>
+          <li>チャットを利用した場合、当社はログを以下の目的に利用できるものとします。
+            <ul class="legal-sub-list">
+              <li>(1) サービスの改善、新サービスの開発のため</li>
+              <li>(2) お問い合わせ等への対応のため</li>
+              <li>(3) 本規約等に違反する行為に対する対応のため</li>
+              <li>(4) その他上記利用目的に付随する目的のため</li>
+            </ul>
+          </li>
+          <li>パートナーサービスの利用に関して生じた紛争等は、ユーザーの費用と責任で解決するものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第9条（禁止事項）</h2>
+      <div class="legal-article-body">
+        <p style="margin-bottom:8px;">ユーザーは、以下の行為をしてはならないものとします。</p>
+        <ul class="legal-plain-list">
+          <li>1. 法令に違反する行為</li>
+          <li>2. 公序良俗に反する行為</li>
+          <li>3. 政治的・宗教的な勧誘を行う行為</li>
+          <li>4. 他者の権利を侵害する行為</li>
+          <li>5. 本サービスを複製・改変する行為</li>
+          <li>6. 本サービスの運営を妨害する行為</li>
+          <li>7. 虚偽の登録内容を申請する行為</li>
+          <li>8. 一人で複数のアカウントを保有する行為</li>
+          <li>9. 第三者になりすまして利用する行為</li>
+          <li>10. 不正なクレジットカードを使用する行為</li>
+          <li>11. 営利目的行為</li>
+          <li>12. その他当社が不適切と判断する行為</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 第10条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第10条（本規約等違反行為に対する対処）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>ユーザーが本規約等に違反していると当社が判断した場合、当社は利用を終了させることができ、以下の処分を講ずることができるものとします。
+            <ul class="legal-sub-list">
+              <li>(1) 違反行為の差し止め</li>
+              <li>(2) 公的機関への通報を含む違反事実の開示</li>
+              <li>(3) 一時的又は永続的にサービスの利用を停止</li>
+            </ul>
+          </li>
+          <li>ユーザーは、当社の対処について異議を申し立てることはできないものとします。</li>
+          <li>ユーザーは、当社が被った損害を直ちに補償するものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第11条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第11条（権利帰属）</h2>
+      <div class="legal-article-body">
+        <p>本サービスに関する知的財産権は全て当社又は当社にライセンスを許諾している者に帰属します。</p>
+      </div>
+    </div>
+
+    <!-- 第12条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第12条（解約）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>ユーザーは、当社が指定する方法で解約できるものとします。</li>
+          <li>解約にあたり、未払い債務がある場合は全額支払うものとします。</li>
+          <li>当社は、退会したユーザーの情報を保有する義務を負わないものとします。</li>
+          <li>本条は第5条の場合にも準用されるものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第13条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第13条（保証の否認及び免責）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>当社は、本サービスがユーザーの特定の目的に適合すること等を保証しません。</li>
+          <li>当社は、バグ等を補修する義務を負いません。</li>
+          <li>当社は、事前通知なく、サービスの中断・停止・終了・変更ができるものとします。</li>
+          <li>情報・アドバイスの結果について、賠償する責任を負いません。</li>
+          <li>当社が責任を負う場合でも、過去3ヶ月間にユーザーが支払った金額を超えて賠償する責任を負いません。</li>
+          <li>ユーザーと第三者との間の紛争について、当社は一切責任を負いません。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第14条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第14条（ユーザーの地位の譲渡等）</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>ユーザーは、当社の書面による承諾なく、権利義務を第三者に譲渡できません。</li>
+          <li>当社は事業譲渡に伴い、本規約等の地位等を譲受人に譲渡できるものとします。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 第15条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第15条（権利の放棄）</h2>
+      <div class="legal-article-body">
+        <p>当社が権利を行使しない場合でも、権利を放棄するものではありません。</p>
+      </div>
+    </div>
+
+    <!-- 第16条 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">第16条（分離可能性）</h2>
+      <div class="legal-article-body">
+        <p>本規約等のいずれかの規定が無効と判断された場合でも、残りの部分は有効とします。</p>
+      </div>
+    </div>
+
+    <div class="legal-date">2024年8月15日 施行</div>
+    <div style="text-align:center">
+      <a class="legal-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i> ページトップへ戻る</a>
+    </div>
+  </div>
+</div><!-- /page-terms -->
+
+<!-- ==================== COMMERCE PAGE (特定商取引法に基づく表記) ==================== -->
+<div id="page-commerce" class="page">
+  <div class="legal-page">
+    <div class="legal-breadcrumb">
+      <a onclick="showPage('top')">トップ</a><span>&gt;</span>特定商取引法に基づく表記
+    </div>
+    <h1 class="legal-page-header">特定商取引法に基づく表記</h1>
+
+    <table class="legal-table">
+      <tr>
+        <th>販売業者</th>
+        <td>株式会社シアン</td>
+      </tr>
+      <tr>
+        <th>運営統括責任者</th>
+        <td>籔本 崇</td>
+      </tr>
+      <tr>
+        <th>住所</th>
+        <td>〒141-0031 東京都品川区西五反田2丁目13-6 セラヴィ五反田ビル2F</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>03-6419-7728</td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td>info@xian.inc</td>
+      </tr>
+      <tr>
+        <th>お問い合わせ対応時間</th>
+        <td>平日 11:00〜17:00</td>
+      </tr>
+      <tr>
+        <th>お問い合わせ先</th>
+        <td>公式LINE: <a href="https://lin.ee/YjPkymi" target="_blank" style="color:var(--pink);text-decoration:none;">https://lin.ee/YjPkymi</a></td>
+      </tr>
+      <tr>
+        <th>URL</th>
+        <td><a href="https://kireireport.com/online-clinic" target="_blank" style="color:var(--pink);text-decoration:none;">https://kireireport.com/online-clinic</a></td>
+      </tr>
+      <tr>
+        <th>販売価格</th>
+        <td>サービスごとに表記</td>
+      </tr>
+      <tr>
+        <th>商品以外の必要代金</th>
+        <td>クール便2,000円（税込）、ネコポス550円（税込）</td>
+      </tr>
+      <tr>
+        <th>支払方法</th>
+        <td>クレジットカード・atone 翌月払い（コンビニ/口座振替）・後払い（コンビニ/銀行ATM）</td>
+      </tr>
+      <tr>
+        <th>支払方法の詳細</th>
+        <td>
+          <strong>■ atone 翌月払い（コンビニ/口座振替）</strong><br>
+          毎月請求が確定した金額をまとめ、翌月にメール/SMSにて請求。コンビニ端末/銀行ATM: 翌月10日、電子バーコード: 翌月10日、はがき請求書: 翌月20日、口座振替: 翌月27日。<br><br>
+          <strong>■ 後払い（コンビニ/銀行ATM）</strong><br>
+          注文確定の翌日にメールとSMSにて請求。支払期限は請求から10日後。
+        </td>
+      </tr>
+      <tr>
+        <th>支払期限</th>
+        <td>ご利用のカード会社ごとに異なります</td>
+      </tr>
+      <tr>
+        <th>商品等の引き渡し時期</th>
+        <td>オンライン診療後、翌営業日までに発送</td>
+      </tr>
+      <tr>
+        <th>返品・交換</th>
+        <td>処方確定後のお薬の返品・交換は原則不可。当社原因の場合は3日以内にご連絡で対応（送料当社負担）。</td>
+      </tr>
+      <tr>
+        <th>定期配送について</th>
+        <td>初回購入後、商品により25日or27日後に2回目決済・発送。以降は解約連絡まで毎月お届け（28日or30日周期）。解約は次回発送日10日前までにマイページより。いつでも解約可能。</td>
+      </tr>
+    </table>
+
+    <div style="text-align:center">
+      <a class="legal-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i> ページトップへ戻る</a>
+    </div>
+  </div>
+</div><!-- /page-commerce -->
+
+<!-- ==================== PRIVACY PAGE (プライバシーポリシー) ==================== -->
+<div id="page-privacy" class="page">
+  <div class="legal-page">
+    <div class="legal-breadcrumb">
+      <a onclick="showPage('top')">トップ</a><span>&gt;</span>プライバシーポリシー
+    </div>
+    <h1 class="legal-page-header">プライバシーポリシー</h1>
+    <p class="legal-page-intro">
+      株式会社シアン（以下「当社」）は、当社が取得する個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。
+    </p>
+
+    <!-- 1. 利用目的 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">1. 利用目的</h2>
+      <div class="legal-article-body">
+        <p style="margin-bottom:8px;"><strong>1-1</strong> 当社は以下の目的で個人情報を利用します。</p>
+        <ul class="legal-plain-list">
+          <li>- 本サービスを提供するため</li>
+          <li>- 登録の受付、本人確認、会員認証等のため</li>
+          <li>- 品質向上のため</li>
+          <li>- トラフィック測定及び行動測定のため</li>
+          <li>- 広告の配信、表示及び効果測定のため</li>
+          <li>- お問い合わせ等への対応のため</li>
+          <li>- 不正対策のため</li>
+          <li>- サービスの改善・新規開発のため</li>
+          <li>- 規約等に違反する行為への対応のため</li>
+          <li>- 規約等の変更通知のため</li>
+          <li>- 人事管理等のため</li>
+          <li>- 採用選考のため</li>
+          <li>- 入社前手続のため</li>
+          <li>- 美容医療クリニックへの予約の受付・管理及び実行のため</li>
+        </ul>
+        <p style="margin-top:12px;"><strong>1-2</strong> 利用目的を変更した場合は通知または公表します。</p>
+      </div>
+    </div>
+
+    <!-- 2. 収集する個人情報及び収集方法 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">2. 収集する個人情報及び収集方法</h2>
+      <div class="legal-article-body">
+        <ul class="legal-plain-list">
+          <li><strong>(1) ご本人様からご提供いただく情報:</strong> 氏名、生年月日、性別、メールアドレス、電話番号、住所、クレジットカード情報、肖像情報、予約に関する情報等</li>
+          <li><strong>(2) 他のサービスとの連携:</strong> 外部サービスのID等</li>
+          <li><strong>(3) アクセス情報:</strong> リファラ、IPアドレス、Cookie、ADID、IDFA等</li>
+          <li><strong>(4) 個別同意で収集する情報:</strong> 位置情報</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. 取得情報の管理 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">3. 取得情報の管理・安全管理のために講じた措置</h2>
+      <div class="legal-article-body">
+        <ul class="legal-plain-list">
+          <li>(1) 組織的安全管理措置</li>
+          <li>(2) 人的安全管理措置</li>
+          <li>(3) 物理的安全管理措置</li>
+          <li>(4) 技術的安全管理措置</li>
+          <li>(5) 外的環境の把握</li>
+          <li>(6) 保存期間の管理</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4. 外部送信 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">4. 外部送信、情報収集モジュールの有無</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>Google Analyticsを利用しています。</li>
+          <li>利便性向上のため利用者情報を取得する場合があります。</li>
+          <li>オプトアウト設定でSP取得情報の取得を停止できます。</li>
+          <li>情報収集モジュールによりSP取得情報を取得しています。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 5. 第三者提供 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">5. 第三者提供</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>法令で認められる場合を除き、同意なく第三者に提供しません。</li>
+          <li>属性情報に加工した上で提供する場合があります。</li>
+          <li>法第27条第2項に基づく第三者提供を行います。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 6. 第三者への委託 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">6. 第三者への委託</h2>
+      <div class="legal-article-body">
+        <p>利用目的の達成に必要な範囲で業務委託する場合があります。</p>
+      </div>
+    </div>
+
+    <!-- 7. 個人情報の開示、削除等 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">7. 個人情報の開示、削除等</h2>
+      <div class="legal-article-body">
+        <ol class="legal-ol">
+          <li>開示・削除等の請求が可能です。</li>
+          <li>代理人による請求には委任状が必要です。</li>
+          <li>回答は文書またはメール等で行います。</li>
+          <li>手数料は1件あたり1,000円です。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 8. お問い合わせ窓口 -->
+    <div class="legal-article">
+      <h2 class="legal-article-title">8. お問い合わせ窓口</h2>
+      <div class="legal-article-body">
+        <p>株式会社シアン<br>
+        〒141-0031 東京都品川区西五反田2丁目13-6 セラヴィ五反田ビル2F<br>
+        <a href="mailto:info@xian.inc" style="color:var(--pink);text-decoration:none;">info@xian.inc</a></p>
+      </div>
+    </div>
+
+    <div class="legal-date">2024年8月15日 制定</div>
+    <div style="text-align:center">
+      <a class="legal-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i> ページトップへ戻る</a>
+    </div>
+  </div>
+</div><!-- /page-privacy -->
+
+<!-- STICKY CTA BAR (mobile) -->
+<div class="sticky-cta-bar">
+  <div class="sticky-cta-bar-inner">
+    <a href="https://lin.ee/3vvO4ol" target="_blank" class="sticky-cta-btn line"><i class="fab fa-line"></i> LINE無料相談</a>
+    <a href="https://lin.ee/3vvO4ol" target="_blank" class="sticky-cta-btn phone"><i class="fas fa-comment-dots"></i> お問い合わせ</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo" style="margin-bottom:12px">キレイレポオンライン</div>
+        <p class="footer-brand-desc">オンライン完結の美容内服・GLP-1ダイエット・アンチエイジングサービス。提携クリニック（マーチクリニック）の医師がオンラインで診察、薬が自宅に届きます。</p>
+        <a href="https://lin.ee/3vvO4ol" target="_blank" class="footer-line-btn"><i class="fab fa-line"></i> LINE友だち追加</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">診療メニュー</div>
+        <a onclick="showPage('glp1')" style="cursor:pointer">GLP-1ダイエット</a>
+        <a onclick="showPage('beauty')" style="cursor:pointer">美容内服</a>
+        <a onclick="showPage('antiaging')" style="cursor:pointer">アンチエイジング</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">サポート</div>
+        <a onclick="showPage('faq')" style="cursor:pointer">よくある質問</a>
+        <a href="https://lin.ee/3vvO4ol" target="_blank">お問い合わせ</a>
+        <a href="https://lin.ee/3vvO4ol" target="_blank">LINE相談</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">法的表記</div>
+        <a onclick="showPage('terms')" style="cursor:pointer">利用規約</a>
+        <a onclick="showPage('privacy')" style="cursor:pointer">プライバシーポリシー</a>
+        <a onclick="showPage('commerce')" style="cursor:pointer">特定商取引法に基づく表記</a>
+        <a onclick="showPage('terms')" style="cursor:pointer">医療広告ガイドライン</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        &copy; 2026 キレイレポオンライン. All rights reserved.
+      </div>
+      <div class="footer-bottom-info">
+        運営: 株式会社シアン / 提携: マーチクリニック
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== PAGE SWITCHER =====
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(function(p) {
+      p.classList.remove('active');
+    });
+    document.getElementById('page-' + name).classList.add('active');
+
+    document.querySelectorAll('.site-nav a').forEach(function(a) {
+      a.classList.remove('active');
+    });
+    var navEl = document.getElementById('nav-' + name);
+    if (navEl) navEl.classList.add('active');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // ===== HAMBURGER MENU =====
+  function toggleMobileMenu() {
+    var btn = document.getElementById('hamburgerBtn');
+    var menu = document.getElementById('mobileMenu');
+    var overlay = document.getElementById('mobileOverlay');
+    var isOpen = menu.classList.contains('open');
+
+    if (isOpen) {
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+      overlay.classList.remove('show');
+      setTimeout(function() { overlay.style.display = 'none'; }, 300);
+      document.body.style.overflow = '';
+    } else {
+      btn.classList.add('open');
+      overlay.style.display = 'block';
+      requestAnimationFrame(function() {
+        overlay.classList.add('show');
+        menu.classList.add('open');
+      });
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  // ===== FAQ ACCORDION =====
+  function toggleFaq(item) {
+    var wasOpen = item.classList.contains('open');
+    var list = item.closest('.faq-list');
+    if (list) {
+      list.querySelectorAll('.faq-item.open').forEach(function(el) {
+        el.classList.remove('open');
+      });
+    }
+    if (!wasOpen) {
+      item.classList.add('open');
+    }
+  }
+
+  // ===== SCROLL REVEAL =====
+  (function() {
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        el.classList.add('visible');
+      });
+      return;
+    }
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      revealObserver.observe(el);
+    });
+  })();
+
+  // ===== COUNT-UP ANIMATION =====
+  (function() {
+    var counted = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          document.querySelectorAll('[data-count]').forEach(function(el) {
+            var target = parseInt(el.getAttribute('data-count'));
+            var unit = el.querySelector('.unit');
+            var unitText = unit ? unit.outerHTML : '';
+            var duration = 1500;
+            var start = performance.now();
+            function tick(now) {
+              var progress = Math.min((now - start) / duration, 1);
+              var ease = 1 - Math.pow(1 - progress, 3);
+              var current = Math.floor(ease * target);
+              el.innerHTML = current.toLocaleString() + unitText;
+              if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    var resultsEl = document.getElementById('results');
+    if (resultsEl) observer.observe(resultsEl);
+  })();
+
+
+  // ===== PLAN PERIOD TABS =====
+  function initPlanTabs() {
+    document.querySelectorAll('.plan-tabs').forEach(function(tabContainer) {
+      tabContainer.querySelectorAll('.plan-tab').forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          // Switch active tab
+          tabContainer.querySelectorAll('.plan-tab').forEach(function(t) {
+            t.classList.remove('active');
+          });
+          tab.classList.add('active');
+
+          var period = tab.dataset.period;
+          var plansGrid = tabContainer.nextElementSibling;
+
+          plansGrid.querySelectorAll('.plan-card').forEach(function(card) {
+            var price = card.getAttribute('data-price-' + period);
+            var label = card.getAttribute('data-label-' + period);
+            var sublabel = card.getAttribute('data-sublabel-' + period);
+            var note = card.getAttribute('data-note-' + period);
+            var suffix = card.getAttribute('data-suffix-' + period) || '円';
+
+            // Skip if no price data for this period (card stays as-is but grayed out)
+            if (!price) {
+              card.style.opacity = '0.4';
+              card.style.pointerEvents = 'none';
+              return;
+            }
+            card.style.opacity = '';
+            card.style.pointerEvents = '';
+
+            // Update price
+            card.querySelector('.plan-price').innerHTML =
+              Number(price).toLocaleString() + '<span class="plan-price-sub">' + suffix + '</span>';
+
+            // Update label
+            card.querySelector('.plan-price-label').textContent = label;
+
+            // Update sublabel (継続価格 for 1ヶ月, hidden for 3/6ヶ月)
+            var sublabelEl = card.querySelector('.plan-sublabel');
+            if (sublabelEl) {
+              sublabelEl.textContent = sublabel || '';
+              sublabelEl.style.display = sublabel ? '' : 'none';
+            }
+
+            // Update note
+            card.querySelector('.plan-note').textContent = note;
+
+            // Monthly price display (3ヶ月/6ヶ月 only)
+            var monthlyEl = card.querySelector('.plan-monthly');
+            var discountEl = card.querySelector('.plan-discount');
+            var monthlyPrice = card.getAttribute('data-monthly-' + period);
+
+            if (period !== '1' && monthlyPrice) {
+              monthlyEl.textContent = '月あたり ' + Number(monthlyPrice).toLocaleString() + '円';
+              monthlyEl.classList.add('show');
+
+              // Calc discount vs base monthly
+              var baseMonthly = Number(card.getAttribute('data-base-monthly') || card.getAttribute('data-price-1'));
+              var discount = ((baseMonthly - Number(monthlyPrice)) / baseMonthly * 100).toFixed(1);
+              if (discount > 0) {
+                discountEl.textContent = '1ヶ月より ' + discount + '%OFF';
+                discountEl.classList.add('show');
+              } else {
+                discountEl.classList.remove('show');
+              }
+            } else {
+              monthlyEl.classList.remove('show');
+              monthlyEl.textContent = '';
+              discountEl.classList.remove('show');
+              discountEl.textContent = '';
+            }
+          });
+        });
+      });
+    });
+  }
+  initPlanTabs();
+</script>
+
+</body>
+</html>
