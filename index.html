@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>キレイレポオンライン | GLP-1ダイエット・美容内服のオンライン診療</title>
+  <title>オンライン診療ならキレイレポオンライン</title>
   <meta name="description" content="キレイレポオンラインは、GLP-1ダイエット・美容内服・AGA・美容点滴をオンラインで完結できるサービスです。定期縛りなし・解約自由。スマホ1台で医師の診察を受け、薬が自宅に届きます。初回限定価格でお試しいただけます。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://kireirepo-online.clinic/">
   <!-- OGP -->
-  <meta property="og:title" content="キレイレポオンライン | GLP-1ダイエット・美容内服のオンライン診療">
+  <meta property="og:title" content="オンライン診療ならキレイレポオンライン">
   <meta property="og:description" content="GLP-1ダイエット・美容内服をオンラインで。スマホ完結で薬が自宅に届きます。定期縛りなし・解約自由。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kireirepo-online.clinic/">
@@ -19,7 +19,7 @@
   <meta property="og:site_name" content="キレイレポオンライン">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="キレイレポオンライン | GLP-1ダイエット・美容内服のオンライン診療">
+  <meta name="twitter:title" content="オンライン診療ならキレイレポオンライン">
   <meta name="twitter:description" content="GLP-1ダイエット・美容内服をオンラインで。スマホ完結で薬が自宅に届きます。">
   <meta name="twitter:image" content="https://kireirepo-online.clinic/ogp.png">
   <!-- JSON-LD -->
@@ -2092,6 +2092,291 @@
         margin-bottom: 8px;
       }
     }
+    /* ===== 新セクション共通 ===== */
+    .recommend-section { background: var(--gray1); }
+    .recommend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .recommend-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+    .recommend-card:hover { transform: translateY(-4px); }
+    .recommend-card-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .recommend-card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .recommend-card-desc {
+      font-size: 13px;
+      color: var(--gray6);
+      line-height: 1.6;
+    }
+
+    /* 治療について / 比較テーブル */
+    .treatment-section { background: white; }
+    .treatment-principle {
+      text-align: center;
+      margin-bottom: 32px;
+      padding: 24px;
+      background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 100%);
+      border-radius: 16px;
+    }
+    .treatment-principle-formula {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--pink);
+      margin-bottom: 8px;
+    }
+    .treatment-principle-desc {
+      font-size: 14px;
+      color: var(--gray6);
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 14px 16px;
+      text-align: center;
+      border-bottom: 1px solid var(--gray3);
+    }
+    .comparison-table thead th {
+      background: var(--gray1);
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 13px;
+    }
+    .comparison-table .highlight-col {
+      background: #fff0f5;
+      font-weight: 700;
+      color: var(--pink);
+    }
+    .comparison-table tbody td {
+      color: var(--gray6);
+    }
+
+    /* 薬の種類テーブル */
+    .drug-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .drug-table th,
+    .drug-table td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--gray3);
+    }
+    .drug-table thead th {
+      background: var(--gray1);
+      font-weight: 700;
+      color: var(--dark);
+      white-space: nowrap;
+    }
+    .drug-table tbody td {
+      color: var(--gray6);
+    }
+    .drug-table .drug-name {
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    /* お支払い・定期配送セクション */
+    .payment-section { background: var(--gray1); }
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .payment-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .payment-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .payment-card-title i { color: var(--pink); }
+    .payment-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .payment-card li {
+      font-size: 14px;
+      color: var(--gray6);
+      padding: 6px 0;
+      line-height: 1.6;
+    }
+    .payment-card li i {
+      color: var(--pink);
+      margin-right: 8px;
+      font-size: 12px;
+    }
+
+    /* オンライン診療とは */
+    .about-online-section { background: white; }
+    .about-online-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .about-online-card {
+      background: var(--gray1);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .about-online-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+      color: var(--pink);
+    }
+    .about-online-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .about-online-card-desc {
+      font-size: 13px;
+      color: var(--gray6);
+      line-height: 1.7;
+    }
+
+    /* メリット比較テーブル */
+    .merit-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .merit-col {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .merit-col.highlight {
+      background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 100%);
+      border: 2px solid var(--pink);
+    }
+    .merit-col-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .merit-col.highlight .merit-col-title { color: var(--pink); }
+    .merit-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .merit-col li {
+      font-size: 14px;
+      padding: 8px 0;
+      color: var(--gray6);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .merit-col li i { margin-top: 3px; flex-shrink: 0; }
+    .merit-col.highlight li i { color: var(--pink); }
+
+    /* ゴールドカラー版 */
+    .gold-section .section-tag { background: #f5f0e0; color: #b8860b; }
+    .gold-section .recommend-card { border-top: 3px solid #b8860b; }
+    .gold-section .payment-card-title i { color: #b8860b; }
+    .gold-section .payment-card li i { color: #b8860b; }
+    .gold-section .treatment-principle {
+      background: linear-gradient(135deg, #faf6e8 0%, #f5f0e0 100%);
+    }
+    .gold-section .treatment-principle-formula { color: #b8860b; }
+    .gold-section .comparison-table .highlight-col {
+      background: #faf6e8;
+      color: #b8860b;
+    }
+
+    /* 課題解決セクション */
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .solution-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px 16px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-top: 3px solid var(--pink);
+    }
+    .solution-card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .solution-card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .solution-card-desc {
+      font-size: 12px;
+      color: var(--gray6);
+      line-height: 1.6;
+    }
+
+    /* レスポンシブ: 新セクション */
+    @media (max-width: 900px) {
+      .recommend-grid,
+      .about-online-grid { grid-template-columns: repeat(2, 1fr); }
+      .solution-grid { grid-template-columns: repeat(2, 1fr); }
+      .payment-grid { grid-template-columns: 1fr; }
+      .merit-comparison { grid-template-columns: 1fr; }
+      .comparison-table { font-size: 12px; }
+      .comparison-table th,
+      .comparison-table td { padding: 10px 8px; }
+      .drug-table { font-size: 12px; }
+      .drug-table th,
+      .drug-table td { padding: 10px 8px; }
+    }
+    @media (max-width: 600px) {
+      .recommend-grid,
+      .about-online-grid,
+      .solution-grid { grid-template-columns: 1fr; }
+      .comparison-table { display: block; overflow-x: auto; }
+      .drug-table { display: block; overflow-x: auto; }
+    }
+
   </style>
 </head>
 <body>
@@ -2144,8 +2429,9 @@
           オンライン診療・完全完結
         </div>
         <h1 class="hero-title">
-          自宅にいながら、<br>
-          <span class="accent">医師の処方</span>で。
+          GLP-1ダイエット・美容内服の<br>
+          <span class="accent">オンライン診療</span>なら<br>
+          キレイレポオンライン
         </h1>
         <p class="hero-desc">
           キレイレポオンラインは、美容内服・GLP-1ダイエットをオンラインで完結できるサービスです。提携クリニック（マーチクリニック）の医師がビデオ通話で診察し、薬が自宅に届きます。
@@ -2374,6 +2660,113 @@
     </div>
   </section>
 
+  <!-- ABOUT ONLINE -->
+  <section class="section about-online-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">オンライン診療とは</h2>
+        <p class="section-sub">スマホ1台で医師の診察を受け、薬が自宅に届く新しい医療のかたちです。</p>
+      </div>
+      <div class="about-online-grid">
+        <div class="about-online-card">
+          <div class="about-online-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="about-online-card-title">スマホで完結</div>
+          <p class="about-online-card-desc">予約・問診・診察・決済まで、すべてスマホ上で完結。通院や待ち時間は不要です。</p>
+        </div>
+        <div class="about-online-card">
+          <div class="about-online-icon"><i class="fas fa-hospital"></i></div>
+          <div class="about-online-card-title">正規の医療機関</div>
+          <p class="about-online-card-desc">提携クリニック（マーチクリニック）の医師が診察。正規の医療機関による安心の処方です。</p>
+        </div>
+        <div class="about-online-card">
+          <div class="about-online-icon"><i class="fas fa-box"></i></div>
+          <div class="about-online-card-title">自宅に届く</div>
+          <p class="about-online-card-desc">処方された薬はプライバシーに配慮した梱包で、最短翌日にご自宅へお届けします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE MERIT -->
+  <section class="section" style="background: var(--gray1);">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">MERIT</span>
+        <h2 class="section-title">オンライン診療の<span class="accent">メリット</span></h2>
+        <p class="section-sub">従来の通院と比べて、こんなに手軽になります。</p>
+      </div>
+      <div class="merit-comparison">
+        <div class="merit-col">
+          <div class="merit-col-title">従来の通院</div>
+          <ul>
+            <li><i class="fas fa-times" style="color:#ccc;"></i> 予約・通院で半日つぶれる</li>
+            <li><i class="fas fa-times" style="color:#ccc;"></i> 待合室での待ち時間</li>
+            <li><i class="fas fa-times" style="color:#ccc;"></i> 定期的に通院が必要</li>
+            <li><i class="fas fa-times" style="color:#ccc;"></i> 薬局での受け取り</li>
+            <li><i class="fas fa-times" style="color:#ccc;"></i> 人目が気になる</li>
+          </ul>
+        </div>
+        <div class="merit-col highlight">
+          <div class="merit-col-title">キレイレポオンライン</div>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> スマホで10分で完了</li>
+            <li><i class="fas fa-check-circle"></i> 待ち時間ゼロ</li>
+            <li><i class="fas fa-check-circle"></i> 定期便で自動お届け</li>
+            <li><i class="fas fa-check-circle"></i> 薬が自宅に届く</li>
+            <li><i class="fas fa-check-circle"></i> プライバシー配慮の梱包</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP PAYMENT -->
+  <section class="section payment-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">PAYMENT & DELIVERY</span>
+        <h2 class="section-title">お支払い・定期配送について</h2>
+        <p class="section-sub">安心してご利用いただける仕組みを整えています。</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-credit-card"></i> お支払い方法</div>
+          <ul>
+            <li><i class="fas fa-check"></i> クレジットカード（VISA / Mastercard / JCB / AMEX）</li>
+            <li><i class="fas fa-check"></i> 銀行振込</li>
+            <li><i class="fas fa-check"></i> 後払い（Paidy）</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-truck"></i> 配送について</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 全国一律 診察・配送料 2,000円（税込）</li>
+            <li><i class="fas fa-check"></i> 最短翌日発送</li>
+            <li><i class="fas fa-check"></i> プライバシー配慮の梱包</li>
+            <li><i class="fas fa-check"></i> ポスト投函 or 宅配便</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-sync-alt"></i> 定期配送のメリット</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 毎月自動発送で飲み忘れ防止</li>
+            <li><i class="fas fa-check"></i> 定期縛りなし・いつでも解約OK</li>
+            <li><i class="fas fa-check"></i> 次回発送3日前までにLINE連絡で変更可</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-calendar-alt"></i> 配送スケジュール</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 初回：診察後、最短翌日発送</li>
+            <li><i class="fas fa-check"></i> 定期便：毎月同日に自動発送</li>
+            <li><i class="fas fa-check"></i> 発送日の変更はLINEで対応</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div><!-- /page-top -->
 
 <!-- ==================== GLP-1 PAGE ==================== -->
@@ -2396,7 +2789,7 @@
         医師監修 · GLP-1オンライン処方
       </div>
       <h1 class="hero-title">
-        GLP-1ダイエット オンライン処方
+        GLP-1メディカルダイエットのオンライン診療
       </h1>
       <p class="hero-desc">
         食欲を抑え、体重を落とす。医師監修の本格ダイエット治療。<br>
@@ -2416,6 +2809,167 @@
       <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary">
         <i class="fab fa-line"></i> LINEで無料相談
       </a>
+    </div>
+  </section>
+
+  <!-- GLP1 RECOMMEND -->
+  <section class="section recommend-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">RECOMMENDED</span>
+        <h2 class="section-title">GLP-1ダイエットが<span class="accent">おすすめな方</span></h2>
+        <p class="section-sub">以下のようなお悩みをお持ちの方に、GLP-1メディカルダイエットが適しています。</p>
+      </div>
+      <div class="recommend-grid">
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🍽️</div>
+          <div class="recommend-card-title">食事制限では落ちにくい</div>
+          <p class="recommend-card-desc">糖質制限やカロリー制限を試したが、思うように体重が落ちない方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🧠</div>
+          <div class="recommend-card-title">食欲のコントロールが難しい</div>
+          <p class="recommend-card-desc">空腹感が強く、食べすぎてしまう方に。GLP-1は食欲中枢に作用して満腹感をサポートします。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">📊</div>
+          <div class="recommend-card-title">BMI 25以上の方</div>
+          <p class="recommend-card-desc">肥満度が高い方ほど効果が期待できます。医師が適切な用量を処方します。※効果には個人差があります。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🔄</div>
+          <div class="recommend-card-title">リバウンドを繰り返している</div>
+          <p class="recommend-card-desc">何度もダイエットとリバウンドを繰り返している方に。根本的な食欲管理で継続をサポート。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🏃</div>
+          <div class="recommend-card-title">運動が続かない・苦手</div>
+          <p class="recommend-card-desc">ハードな運動なしでも減量を目指せます。もちろん運動との併用でさらに効果的。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🏥</div>
+          <div class="recommend-card-title">通院せずにダイエットしたい</div>
+          <p class="recommend-card-desc">忙しくて通院できない方も、オンライン完結で医師のサポートを受けられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLP1 TREATMENT -->
+  <section class="section treatment-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">治療について</h2>
+        <p class="section-sub">GLP-1メディカルダイエットの仕組みと、他の減量方法との比較をご紹介します。</p>
+      </div>
+      <div class="treatment-principle">
+        <div class="treatment-principle-formula">摂取カロリー ＜＜ 消費カロリー</div>
+        <p class="treatment-principle-desc">ダイエットの基本原則。GLP-1は食欲を自然に抑えることで、この状態を無理なく実現します。</p>
+      </div>
+      <h3 style="text-align:center; font-size:18px; margin-bottom:20px; color:var(--dark);">他の減量方法との比較</h3>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>方法</th>
+              <th>食欲抑制</th>
+              <th>継続のしやすさ</th>
+              <th>医師の監修</th>
+              <th>リバウンドリスク</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>食事制限</td>
+              <td>×</td>
+              <td>△</td>
+              <td>×</td>
+              <td>高い</td>
+            </tr>
+            <tr>
+              <td>運動</td>
+              <td>×</td>
+              <td>△</td>
+              <td>×</td>
+              <td>中程度</td>
+            </tr>
+            <tr>
+              <td>サプリメント</td>
+              <td>△</td>
+              <td>○</td>
+              <td>×</td>
+              <td>高い</td>
+            </tr>
+            <tr>
+              <td class="highlight-col">GLP-1治療</td>
+              <td class="highlight-col">◎</td>
+              <td class="highlight-col">◎</td>
+              <td class="highlight-col">◎</td>
+              <td class="highlight-col">低い※</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center; font-size:12px; color:var(--gray5); margin-top:12px;">※効果・リバウンドリスクには個人差があります。医師の指導のもと継続使用が推奨されます。</p>
+    </div>
+  </section>
+
+  <!-- GLP1 DRUGS -->
+  <section class="section" style="background: var(--gray1);">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">MEDICATIONS</span>
+        <h2 class="section-title">薬の種類と特徴</h2>
+        <p class="section-sub">お身体の状態やご希望に合わせて、医師が最適な薬を処方します。</p>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="drug-table">
+          <thead>
+            <tr>
+              <th>薬剤名</th>
+              <th>分類</th>
+              <th>投与方法</th>
+              <th>特徴</th>
+              <th>こんな方に</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="drug-name">マンジャロ<br><small>（チルゼパチド）</small></td>
+              <td>GIP/GLP-1受容体作動薬</td>
+              <td>週1回 皮下注射</td>
+              <td>GIPとGLP-1の二重作用で強力な食欲抑制・体重減少をサポート</td>
+              <td>しっかり減量したい方</td>
+            </tr>
+            <tr>
+              <td class="drug-name">リベルサス<br><small>（セマグルチド）</small></td>
+              <td>GLP-1受容体作動薬</td>
+              <td>毎日 内服（経口）</td>
+              <td>注射不要の経口GLP-1薬。食欲抑制と血糖改善</td>
+              <td>注射に抵抗がある方</td>
+            </tr>
+            <tr>
+              <td class="drug-name">フォシーガ<br><small>（ダパグリフロジン）</small></td>
+              <td>SGLT2阻害薬</td>
+              <td>毎日 内服（経口）</td>
+              <td>余分な糖を尿から排出。1日約240〜400kcal分の糖を排出</td>
+              <td>糖質が多い食生活の方</td>
+            </tr>
+            <tr>
+              <td class="drug-name">ルセフィ<br><small>（ルセオグリフロジン）</small></td>
+              <td>SGLT2阻害薬</td>
+              <td>毎日 内服（経口）</td>
+              <td>日本発のSGLT2阻害薬。糖排出で体重減少をサポート</td>
+              <td>手軽に始めたい方</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center; font-size:12px; color:var(--gray5); margin-top:16px;">
+        ※いずれも国内では肥満治療目的での使用は承認適応外です。医師の判断のもと処方されます。<br>
+        ※効果には個人差があります。
+      </p>
     </div>
   </section>
 
@@ -2940,6 +3494,7 @@
         <li>SGLT2阻害薬（フォシーガ・ルセフィ）では、尿路感染症・性器感染症・頻尿・口渇・脱水などが生じる場合があります。十分な水分補給を心がけてください。</li>
         <li>医師のオンライン診察が必要です。問診内容によっては処方できない場合があります。</li>
         <li>妊娠中・授乳中の方、膵炎の既往がある方、甲状腺髄様がん・MEN2の既往または家族歴がある方、重度の腎機能障害・透析中の方、1型糖尿病の方は処方できません。</li>
+        <li><a href="javascript:void(0)" onclick="showPage('guidelines')" style="color:var(--pink);text-decoration:underline;">医療広告ガイドラインに基づく表記</a>もご確認ください。</li>
       </ul>
     </div>
   </section>
@@ -3011,6 +3566,74 @@
     </div>
   </section>
 
+  <!-- GLP1 FLOW -->
+  <section class="section flow-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">HOW IT WORKS</span>
+        <h2 class="section-title">診療の流れ</h2>
+        <p class="section-sub">申し込みから薬の到着まで、すべてオンラインで完結。</p>
+      </div>
+      <div class="flow-steps">
+        <div class="flow-step reveal">
+          <div class="flow-num"><i class="fab fa-line" style="font-size:28px"></i></div>
+          <div class="flow-step-title">LINE友だち追加</div>
+          <p class="flow-step-desc">QRコードまたはボタンからLINE友だち追加。24時間いつでも登録OK。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約30秒</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-num"><i class="fas fa-clipboard-list" style="font-size:26px"></i></div>
+          <div class="flow-step-title">問診票を記入</div>
+          <p class="flow-step-desc">簡単な質問に答えるだけ。健康状態やお悩みをLINE上で入力します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約5分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-num"><i class="fas fa-user-md" style="font-size:26px"></i></div>
+          <div class="flow-step-title">オンライン診察</div>
+          <p class="flow-step-desc">ビデオ通話で医師が診察。最適な処方を決定します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約10分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-3">
+          <div class="flow-num"><i class="fas fa-box" style="font-size:26px"></i></div>
+          <div class="flow-step-title">薬が自宅に届く</div>
+          <p class="flow-step-desc">処方確定後、薬を発送。定期便なら毎月自動でお届け。LINEで経過フォローも。</p>
+          <div class="flow-step-time"><i class="fas fa-truck"></i> ご自宅にお届け</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLP1 REASONS -->
+  <section class="section reasons-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">WHY US</span>
+        <h2 class="section-title">キレイレポが<span class="accent">選ばれる理由</span></h2>
+        <p class="section-sub">通院不要で、質の高い医療をリーズナブルに。</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card reveal">
+          <div class="reason-icon-wrap"><i class="fas fa-user-md" style="color: var(--pink)"></i></div>
+          <div class="reason-title">医師によるオンライン診療</div>
+          <p class="reason-desc">経験豊富な医師がビデオ通話で丁寧に診察。自宅にいながら本格的な医療を受けられます。</p>
+          <span class="reason-free-tag">診察・配送料 2,000円</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-1">
+          <div class="reason-icon-wrap"><i class="fas fa-box" style="color: var(--pink)"></i></div>
+          <div class="reason-title">自宅に直接お届け</div>
+          <p class="reason-desc">処方された薬は郵便ポストや宅配便でお届け。定期便なら毎月自動発送で飲み忘れを防ぎます。</p>
+          <span class="reason-free-tag">配送料込み</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-2">
+          <div class="reason-icon-wrap"><i class="fab fa-line" style="color: var(--pink)"></i></div>
+          <div class="reason-title">LINEで気軽に相談</div>
+          <p class="reason-desc">専任スタッフがLINEで対応。診察の予約から薬の変更まで、すべてLINE上で完結します。</p>
+          <span class="reason-free-tag">相談無料</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- GLP-1 CTA -->
   <section class="cta-section">
     <div class="section-inner">
@@ -3027,6 +3650,52 @@
     </div>
   </section>
 
+  <!-- GLP1 PAYMENT -->
+  <section class="section payment-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">PAYMENT & DELIVERY</span>
+        <h2 class="section-title">お支払い・定期配送について</h2>
+        <p class="section-sub">安心してご利用いただける仕組みを整えています。</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-credit-card"></i> お支払い方法</div>
+          <ul>
+            <li><i class="fas fa-check"></i> クレジットカード（VISA / Mastercard / JCB / AMEX）</li>
+            <li><i class="fas fa-check"></i> 銀行振込</li>
+            <li><i class="fas fa-check"></i> 後払い（Paidy）</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-truck"></i> 配送について</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 全国一律 診察・配送料 2,000円（税込）</li>
+            <li><i class="fas fa-check"></i> 最短翌日発送</li>
+            <li><i class="fas fa-check"></i> プライバシー配慮の梱包</li>
+            <li><i class="fas fa-check"></i> ポスト投函 or 宅配便</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-sync-alt"></i> 定期配送のメリット</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 毎月自動発送で飲み忘れ防止</li>
+            <li><i class="fas fa-check"></i> 定期縛りなし・いつでも解約OK</li>
+            <li><i class="fas fa-check"></i> 次回発送3日前までにLINE連絡で変更可</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-calendar-alt"></i> 配送スケジュール</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 初回：診察後、最短翌日発送</li>
+            <li><i class="fas fa-check"></i> 定期便：毎月同日に自動発送</li>
+            <li><i class="fas fa-check"></i> 発送日の変更はLINEで対応</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- DISCLAIMER -->
   <div class="disclaimer">
     <div>
@@ -3037,7 +3706,8 @@
       ※フォシーガ（ダパグリフロジン）・ルセフィ（ルセオグリフロジン）は国内では2型糖尿病等の治療薬として承認されていますが、肥満治療目的での使用は国内未承認（適応外使用）です。<br>
       ※本診療で処方される医薬品は、適応外使用のため医薬品副作用被害救済制度の対象外です。<br>
       ※医薬品は国内の医薬品卸売販売業者より購入しています。<br>
-      ※医師の診察に基づいた処方となります。医師の判断により処方できない場合があります。
+      ※医師の診察に基づいた処方となります。医師の判断により処方できない場合があります。<br>
+      ※<a href="javascript:void(0)" onclick="showPage('guidelines')" style="color:var(--pink);text-decoration:underline;">医療広告ガイドラインに基づく表記</a>もご確認ください。
     </div>
   </div>
 
@@ -3063,7 +3733,7 @@
         医師処方 · 美容内服オンライン
       </div>
       <h1 class="hero-title">
-        美容内服 オンライン処方
+        美容内服のオンライン診療
       </h1>
       <p class="hero-desc">
         内側からケアする、医師処方の美容薬。美白・美肌・エイジングケア。<br>
@@ -3083,6 +3753,82 @@
       <a href="https://lin.ee/3vvO4ol" target="_blank" class="btn-primary btn-line">
         <i class="fab fa-line"></i> LINEで無料相談
       </a>
+    </div>
+  </section>
+
+  <!-- BEAUTY RECOMMEND -->
+  <section class="section recommend-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">RECOMMENDED</span>
+        <h2 class="section-title">美容内服が<span class="accent">おすすめな方</span></h2>
+        <p class="section-sub">以下のようなお悩みをお持ちの方に、医師処方の美容内服が適しています。</p>
+      </div>
+      <div class="recommend-grid">
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🌟</div>
+          <div class="recommend-card-title">シミ・そばかすが気になる</div>
+          <p class="recommend-card-desc">紫外線ダメージの蓄積でシミが増えてきた方に。トランサミン・ビタミンCで内側からケア。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">✨</div>
+          <div class="recommend-card-title">くすみ・肌の透明感が欲しい</div>
+          <p class="recommend-card-desc">肌のトーンが暗くなった、透明感を取り戻したい方に。※効果には個人差があります。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">💎</div>
+          <div class="recommend-card-title">ニキビ・肌荒れに悩んでいる</div>
+          <p class="recommend-card-desc">繰り返すニキビや肌荒れを内側からアプローチしたい方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🌸</div>
+          <div class="recommend-card-title">エイジングサインが出始めた</div>
+          <p class="recommend-card-desc">小じわ・ハリの低下など、初期のエイジングケアを始めたい方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">💊</div>
+          <div class="recommend-card-title">スキンケアだけでは物足りない</div>
+          <p class="recommend-card-desc">外からのケアに加え、体の内側から美肌をサポートしたい方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🏠</div>
+          <div class="recommend-card-title">通院せずに美容ケアしたい</div>
+          <p class="recommend-card-desc">忙しくて美容皮膚科に通えない方も、オンラインで手軽に始められます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAUTY SOLUTIONS -->
+  <section class="section treatment-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">SOLUTIONS</span>
+        <h2 class="section-title">美容内服で<span class="accent">解決できる課題</span></h2>
+        <p class="section-sub">医師処方の内服薬で、さまざまな肌のお悩みに内側からアプローチ。※効果には個人差があります。</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-card-icon">🌟</div>
+          <div class="solution-card-title">美白・シミ対策</div>
+          <p class="solution-card-desc">トランサミン・ビタミンCでメラニン生成を抑制し、シミの改善をサポートします。</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-card-icon">💧</div>
+          <div class="solution-card-title">ハリ・うるおい</div>
+          <p class="solution-card-desc">コラーゲン・ヒアルロン酸の体内合成をサポートし、肌のハリと潤いを内側から。</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-card-icon">🛡️</div>
+          <div class="solution-card-title">ニキビ・肌荒れ</div>
+          <p class="solution-card-desc">ビタミンB群やビオチンで肌のターンオーバーを整え、肌荒れの改善をサポート。</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-card-icon">⏳</div>
+          <div class="solution-card-title">エイジングケア</div>
+          <p class="solution-card-desc">抗酸化ビタミンで酸化ストレスを軽減し、肌の老化進行を内側からケアします。</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -3335,6 +4081,74 @@
     </div>
   </section>
 
+  <!-- BEAUTY FLOW -->
+  <section class="section flow-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">HOW IT WORKS</span>
+        <h2 class="section-title">診療の流れ</h2>
+        <p class="section-sub">申し込みから薬の到着まで、すべてオンラインで完結。</p>
+      </div>
+      <div class="flow-steps">
+        <div class="flow-step reveal">
+          <div class="flow-num"><i class="fab fa-line" style="font-size:28px"></i></div>
+          <div class="flow-step-title">LINE友だち追加</div>
+          <p class="flow-step-desc">QRコードまたはボタンからLINE友だち追加。24時間いつでも登録OK。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約30秒</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-num"><i class="fas fa-clipboard-list" style="font-size:26px"></i></div>
+          <div class="flow-step-title">問診票を記入</div>
+          <p class="flow-step-desc">簡単な質問に答えるだけ。健康状態やお悩みをLINE上で入力します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約5分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-num"><i class="fas fa-user-md" style="font-size:26px"></i></div>
+          <div class="flow-step-title">オンライン診察</div>
+          <p class="flow-step-desc">ビデオ通話で医師が診察。最適な処方を決定します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約10分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-3">
+          <div class="flow-num"><i class="fas fa-box" style="font-size:26px"></i></div>
+          <div class="flow-step-title">薬が自宅に届く</div>
+          <p class="flow-step-desc">処方確定後、薬を発送。定期便なら毎月自動でお届け。LINEで経過フォローも。</p>
+          <div class="flow-step-time"><i class="fas fa-truck"></i> ご自宅にお届け</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAUTY REASONS -->
+  <section class="section reasons-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">WHY US</span>
+        <h2 class="section-title">キレイレポが<span class="accent">選ばれる理由</span></h2>
+        <p class="section-sub">通院不要で、質の高い医療をリーズナブルに。</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card reveal">
+          <div class="reason-icon-wrap"><i class="fas fa-user-md" style="color: var(--pink)"></i></div>
+          <div class="reason-title">医師によるオンライン診療</div>
+          <p class="reason-desc">経験豊富な医師がビデオ通話で丁寧に診察。自宅にいながら本格的な医療を受けられます。</p>
+          <span class="reason-free-tag">診察・配送料 2,000円</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-1">
+          <div class="reason-icon-wrap"><i class="fas fa-box" style="color: var(--pink)"></i></div>
+          <div class="reason-title">自宅に直接お届け</div>
+          <p class="reason-desc">処方された薬は郵便ポストや宅配便でお届け。定期便なら毎月自動発送で飲み忘れを防ぎます。</p>
+          <span class="reason-free-tag">配送料込み</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-2">
+          <div class="reason-icon-wrap"><i class="fab fa-line" style="color: var(--pink)"></i></div>
+          <div class="reason-title">LINEで気軽に相談</div>
+          <p class="reason-desc">専任スタッフがLINEで対応。診察の予約から薬の変更まで、すべてLINE上で完結します。</p>
+          <span class="reason-free-tag">相談無料</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BEAUTY CTA -->
   <section class="cta-section">
     <div class="section-inner">
@@ -3347,6 +4161,52 @@
       <div class="cta-note-white">
         <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
         <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAUTY PAYMENT -->
+  <section class="section payment-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag">PAYMENT & DELIVERY</span>
+        <h2 class="section-title">お支払い・定期配送について</h2>
+        <p class="section-sub">安心してご利用いただける仕組みを整えています。</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-credit-card"></i> お支払い方法</div>
+          <ul>
+            <li><i class="fas fa-check"></i> クレジットカード（VISA / Mastercard / JCB / AMEX）</li>
+            <li><i class="fas fa-check"></i> 銀行振込</li>
+            <li><i class="fas fa-check"></i> 後払い（Paidy）</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-truck"></i> 配送について</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 全国一律 診察・配送料 2,000円（税込）</li>
+            <li><i class="fas fa-check"></i> 最短翌日発送</li>
+            <li><i class="fas fa-check"></i> プライバシー配慮の梱包</li>
+            <li><i class="fas fa-check"></i> ポスト投函 or 宅配便</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-sync-alt"></i> 定期配送のメリット</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 毎月自動発送で飲み忘れ防止</li>
+            <li><i class="fas fa-check"></i> 定期縛りなし・いつでも解約OK</li>
+            <li><i class="fas fa-check"></i> 次回発送3日前までにLINE連絡で変更可</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-calendar-alt"></i> 配送スケジュール</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 初回：診察後、最短翌日発送</li>
+            <li><i class="fas fa-check"></i> 定期便：毎月同日に自動発送</li>
+            <li><i class="fas fa-check"></i> 発送日の変更はLINEで対応</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -3382,8 +4242,7 @@
     <div class="hero-antiaging-inner">
       <div class="hero-eyebrow"><i class="fas fa-dna"></i> ANTI-AGING</div>
       <h1 class="hero-title">
-        細胞レベルから始める<br>
-        <span class="accent">エイジングケア</span>
+        アンチエイジングのオンライン診療
       </h1>
       <p class="hero-desc">
         2型糖尿病治療薬として60年以上の臨床実績を持つメトホルミン。<br>
@@ -3423,6 +4282,77 @@
           <div class="flow-step-num">03</div>
           <div class="flow-step-title">抗炎症・抗酸化</div>
           <p class="flow-step-desc">慢性的な微小炎症を抑制し、酸化ストレスを軽減。世界的に研究が進むエイジングケアアプローチです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTIAGING RECOMMEND -->
+  <section class="section recommend-section gold-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">RECOMMENDED</span>
+        <h2 class="section-title">アンチエイジングが<span class="accent">おすすめな方</span></h2>
+        <p class="section-sub">以下のようなお悩み・関心をお持ちの方に適した治療です。</p>
+      </div>
+      <div class="recommend-grid">
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🔬</div>
+          <div class="recommend-card-title">40代以降の老化が気になる</div>
+          <p class="recommend-card-desc">加齢による体力低下・疲れやすさを感じ始めた方に。※効果には個人差があります。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">⚡</div>
+          <div class="recommend-card-title">代謝の低下を感じる</div>
+          <p class="recommend-card-desc">体重が落ちにくくなった、基礎代謝の衰えを実感している方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🧬</div>
+          <div class="recommend-card-title">長寿研究に関心がある</div>
+          <p class="recommend-card-desc">海外のTAME試験など、抗老化研究の最新アプローチを試したい方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">💪</div>
+          <div class="recommend-card-title">予防的な健康管理をしたい</div>
+          <p class="recommend-card-desc">病気になる前のセルフケアとして、科学的根拠のあるアプローチを求める方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">🩺</div>
+          <div class="recommend-card-title">血糖値が気になる</div>
+          <p class="recommend-card-desc">健康診断で血糖値を指摘された、糖質の摂りすぎが心配な方に。</p>
+        </div>
+        <div class="recommend-card">
+          <div class="recommend-card-icon">✨</div>
+          <div class="recommend-card-title">内側からの美容ケアを求める</div>
+          <p class="recommend-card-desc">スキンケアだけでなく、細胞レベルの若々しさを目指す方に。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTIAGING SOLUTIONS -->
+  <section class="section treatment-section gold-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">SOLUTIONS</span>
+        <h2 class="section-title">メトホルミンで<span class="accent">解決できる課題</span></h2>
+        <p class="section-sub">60年以上の臨床実績を持つ医薬品の、エイジングケアへの応用が研究されています。※効果には個人差があります。</p>
+      </div>
+      <div class="solution-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="solution-card" style="border-top-color: #b8860b;">
+          <div class="solution-card-icon">🔋</div>
+          <div class="solution-card-title">細胞エネルギー回復</div>
+          <p class="solution-card-desc">AMPKの活性化でミトコンドリア機能を改善し、細胞のエネルギー産生をサポートします。</p>
+        </div>
+        <div class="solution-card" style="border-top-color: #b8860b;">
+          <div class="solution-card-icon">📊</div>
+          <div class="solution-card-title">代謝・血糖値の安定</div>
+          <p class="solution-card-desc">インスリン感受性を高め、血糖値の安定化と脂質代謝の改善をサポートします。</p>
+        </div>
+        <div class="solution-card" style="border-top-color: #b8860b;">
+          <div class="solution-card-icon">🛡️</div>
+          <div class="solution-card-title">慢性炎症の抑制</div>
+          <p class="solution-card-desc">加齢に伴う慢性的な微小炎症を抑制し、酸化ストレスの軽減をサポートします。</p>
         </div>
       </div>
     </div>
@@ -3479,6 +4409,74 @@
     </div>
   </section>
 
+  <!-- ANTIAGING FLOW -->
+  <section class="section flow-section gold-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">HOW IT WORKS</span>
+        <h2 class="section-title">診療の流れ</h2>
+        <p class="section-sub">申し込みから薬の到着まで、すべてオンラインで完結。</p>
+      </div>
+      <div class="flow-steps">
+        <div class="flow-step reveal">
+          <div class="flow-num"><i class="fab fa-line" style="font-size:28px"></i></div>
+          <div class="flow-step-title">LINE友だち追加</div>
+          <p class="flow-step-desc">QRコードまたはボタンからLINE友だち追加。24時間いつでも登録OK。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約30秒</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-num"><i class="fas fa-clipboard-list" style="font-size:26px"></i></div>
+          <div class="flow-step-title">問診票を記入</div>
+          <p class="flow-step-desc">簡単な質問に答えるだけ。健康状態やお悩みをLINE上で入力します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約5分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-num"><i class="fas fa-user-md" style="font-size:26px"></i></div>
+          <div class="flow-step-title">オンライン診察</div>
+          <p class="flow-step-desc">ビデオ通話で医師が診察。最適な処方を決定します。</p>
+          <div class="flow-step-time"><i class="fas fa-clock"></i> 約10分</div>
+        </div>
+        <div class="flow-step reveal reveal-delay-3">
+          <div class="flow-num"><i class="fas fa-box" style="font-size:26px"></i></div>
+          <div class="flow-step-title">薬が自宅に届く</div>
+          <p class="flow-step-desc">処方確定後、薬を発送。定期便なら毎月自動でお届け。LINEで経過フォローも。</p>
+          <div class="flow-step-time"><i class="fas fa-truck"></i> ご自宅にお届け</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTIAGING REASONS -->
+  <section class="section reasons-section gold-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">WHY US</span>
+        <h2 class="section-title">キレイレポが<span class="accent">選ばれる理由</span></h2>
+        <p class="section-sub">通院不要で、質の高い医療をリーズナブルに。</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card reveal">
+          <div class="reason-icon-wrap"><i class="fas fa-user-md" style="color: #b8860b"></i></div>
+          <div class="reason-title">医師によるオンライン診療</div>
+          <p class="reason-desc">経験豊富な医師がビデオ通話で丁寧に診察。自宅にいながら本格的な医療を受けられます。</p>
+          <span class="reason-free-tag" style="background:#f5f0e0; color:#b8860b;">診察・配送料 2,000円</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-1">
+          <div class="reason-icon-wrap"><i class="fas fa-box" style="color: #b8860b"></i></div>
+          <div class="reason-title">自宅に直接お届け</div>
+          <p class="reason-desc">処方された薬は郵便ポストや宅配便でお届け。定期便なら毎月自動発送で飲み忘れを防ぎます。</p>
+          <span class="reason-free-tag" style="background:#f5f0e0; color:#b8860b;">配送料込み</span>
+        </div>
+        <div class="reason-card reveal reveal-delay-2">
+          <div class="reason-icon-wrap"><i class="fab fa-line" style="color: #b8860b"></i></div>
+          <div class="reason-title">LINEで気軽に相談</div>
+          <p class="reason-desc">専任スタッフがLINEで対応。診察の予約から薬の変更まで、すべてLINE上で完結します。</p>
+          <span class="reason-free-tag" style="background:#f5f0e0; color:#b8860b;">相談無料</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" style="background:#f5f0e0; border-color:#e8dcc8;">
     <div class="section-inner" style="text-align:center;">
@@ -3492,6 +4490,52 @@
       <div class="cta-note-white">
         <i class="fas fa-lock"></i> 個人情報は適切に管理されます &nbsp;|&nbsp;
         <i class="fas fa-shield-alt"></i> LINEで気軽にご相談ください
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTIAGING PAYMENT -->
+  <section class="section payment-section gold-section">
+    <div class="section-inner">
+      <div class="section-center">
+        <span class="section-tag" style="background:#f5f0e0; color:#b8860b;">PAYMENT & DELIVERY</span>
+        <h2 class="section-title">お支払い・定期配送について</h2>
+        <p class="section-sub">安心してご利用いただける仕組みを整えています。</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-credit-card"></i> お支払い方法</div>
+          <ul>
+            <li><i class="fas fa-check"></i> クレジットカード（VISA / Mastercard / JCB / AMEX）</li>
+            <li><i class="fas fa-check"></i> 銀行振込</li>
+            <li><i class="fas fa-check"></i> 後払い（Paidy）</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-truck"></i> 配送について</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 全国一律 診察・配送料 2,000円（税込）</li>
+            <li><i class="fas fa-check"></i> 最短翌日発送</li>
+            <li><i class="fas fa-check"></i> プライバシー配慮の梱包</li>
+            <li><i class="fas fa-check"></i> ポスト投函 or 宅配便</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-sync-alt"></i> 定期配送のメリット</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 毎月自動発送で飲み忘れ防止</li>
+            <li><i class="fas fa-check"></i> 定期縛りなし・いつでも解約OK</li>
+            <li><i class="fas fa-check"></i> 次回発送3日前までにLINE連絡で変更可</li>
+          </ul>
+        </div>
+        <div class="payment-card">
+          <div class="payment-card-title"><i class="fas fa-calendar-alt"></i> 配送スケジュール</div>
+          <ul>
+            <li><i class="fas fa-check"></i> 初回：診察後、最短翌日発送</li>
+            <li><i class="fas fa-check"></i> 定期便：毎月同日に自動発送</li>
+            <li><i class="fas fa-check"></i> 発送日の変更はLINEで対応</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -4293,6 +5337,19 @@
     });
     var navEl = document.getElementById('nav-' + name);
     if (navEl) navEl.classList.add('active');
+
+    // 動的タイトル切替
+    var titles = {
+      top: 'オンライン診療ならキレイレポオンライン',
+      glp1: 'GLP-1メディカルダイエット | オンライン診療ならキレイレポオンライン',
+      beauty: '美容内服 | オンライン診療ならキレイレポオンライン',
+      antiaging: 'アンチエイジング | オンライン診療ならキレイレポオンライン',
+      faq: 'よくある質問 | キレイレポオンライン',
+      privacy: 'プライバシーポリシー | キレイレポオンライン',
+      legal: '特定商取引法に基づく表記 | キレイレポオンライン',
+      guidelines: '医療広告ガイドライン | キレイレポオンライン'
+    };
+    document.title = titles[name] || 'オンライン診療ならキレイレポオンライン';
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
